@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Request;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -22,4 +25,51 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 });
 
 Route::group(['middleware' => ['twill_auth:twill_users']], function () {
+    Route::group(['prefix' => 'admin/artisan'], function () {
+        Route::get('storage-link', function () {
+            $command = 'storage:link';
+
+            Artisan::call($command);
+
+            return '<pre>' . Artisan::output() . '</pre>';
+        });
+
+        Route::get('optimize-clear', function () {
+            $command = 'optimize:clear';
+
+            Artisan::call($command);
+
+            return '<pre>' . Artisan::output() . '</pre>';
+        });
+
+        Route::get('migrate-refresh', function () {
+            $command = 'migrate:refresh';
+            $parameters = [];
+
+            if (Request::has('seed')) {
+                $parameters['--seed'] = true;
+            }
+
+            Artisan::call($command, $parameters);
+
+            return '<pre>' . Artisan::output() . '</pre>';
+        });
+
+        Route::get('iseed', function () {
+            $command = 'iseed';
+            $parameters = [];
+
+            if (Request::has('force')) {
+                $parameters['--force'] = true;
+            }
+
+            $parameters['tables'] = implode(',', collect(array_map('current', DB::select('SHOW TABLES')))->filter(function ($value) {
+                return $value !== 'migrations';
+            })->toArray());
+
+            Artisan::call($command, $parameters);
+
+            return '<pre>' . Artisan::output() . '</pre>';
+        });
+    });
 });
