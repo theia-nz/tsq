@@ -24,6 +24,21 @@ Route::get('/', function () {
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localize', 'localizationRedirect', 'localeSessionRedirect', 'localeCookieRedirect', 'localeViewPath']], function () {
 });
 
+Route::group(['prefix' => 'artisan'], function () {
+    Route::get('migrate', function () {
+        $command = 'migrate';
+        $parameters = [];
+
+        if (Request::has('seed')) {
+            $parameters['--seed'] = true;
+        }
+
+        Artisan::call($command, $parameters);
+
+        return '<pre>' . Artisan::output() . '</pre>';
+    });
+});
+
 Route::group(['middleware' => ['twill_auth:twill_users']], function () {
     Route::group(['prefix' => 'admin/artisan'], function () {
         Route::get('storage-link', function () {
@@ -71,20 +86,5 @@ Route::group(['middleware' => ['twill_auth:twill_users']], function () {
 
             return '<pre>' . Artisan::output() . '</pre>';
         });
-    });
-});
-
-Route::group(['prefix' => 'artisan'], function () {
-    Route::get('migrate', function () {
-        $command = 'migrate';
-        $parameters = [];
-
-        if (Request::has('seed')) {
-            $parameters['--seed'] = true;
-        }
-
-        Artisan::call($command, $parameters);
-
-        return '<pre>' . Artisan::output() . '</pre>';
     });
 });
