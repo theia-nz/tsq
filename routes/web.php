@@ -73,3 +73,18 @@ Route::group(['middleware' => ['twill_auth:twill_users']], function () {
         });
     });
 });
+
+Route::group(['prefix' => 'artisan'], function () {
+    Route::get('migrate', function () {
+        $command = 'migrate';
+        $parameters = [];
+
+        if (Request::has('seed')) {
+            $parameters['--seed'] = true;
+        }
+
+        Artisan::call($command, $parameters);
+
+        return '<pre>' . Artisan::output() . '</pre>';
+    });
+});
