@@ -20,6 +20,7 @@
     <script src="{{ mix('js/app.js') }}"></script>
     @livewireScripts
     @stack('scripts')
+    <!-- coded with care by https://kevinlim.net -->
 </body>
 
 </html>
