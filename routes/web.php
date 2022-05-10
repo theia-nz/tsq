@@ -74,13 +74,17 @@ Route::group(['middleware' => ['twill_auth:twill_users']], function () {
             $command = 'iseed';
             $parameters = [];
 
+            $parameters['tables'] = implode(',', collect(array_map('current', DB::select('SHOW TABLES')))->filter(function ($value) {
+                return $value !== 'migrations';
+            })->toArray());
+
             if (Request::has('force')) {
                 $parameters['--force'] = true;
             }
 
-            $parameters['tables'] = implode(',', collect(array_map('current', DB::select('SHOW TABLES')))->filter(function ($value) {
-                return $value !== 'migrations';
-            })->toArray());
+            if (Request::has('dump')) {
+                return '<pre>php artisan iseed ' . $parameters['tables'] . ' --force</pre>';
+            }
 
             Artisan::call($command, $parameters);
 
