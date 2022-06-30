@@ -1,8 +1,9 @@
-@import url("https://rsms.me/inter/inter.css");
+@import "fonts";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+// @tailwind screens;
 
 [x-cloak] {
 	display: none !important;
