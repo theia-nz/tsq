@@ -882,6 +882,9 @@ select{
 .-mt-px{
   margin-top: -1px;
 }
+.inline{
+  display: inline;
+}
 .flex{
   display: flex;
 }

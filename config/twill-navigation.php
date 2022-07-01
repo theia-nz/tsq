@@ -13,4 +13,8 @@ return [
 			],
 		],
 	],
+	'menus' => [
+		'title' => 'Menus',
+		'module' => true,
+	],
 ];
