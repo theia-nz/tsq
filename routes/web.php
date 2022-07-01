@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Request;
+use App\Http\Controllers\PageController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
@@ -17,9 +18,13 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 |
 */
 
-Route::get('/', function () {
+Route::get('/test', function () {
     return view('pages.index');
 });
+
+Route::get('/', [PageController::class, 'pageHome']);
+Route::get('home', [PageController::class, 'pageHome']);
+Route::get('contact', [PageController::class, 'pageContact']);
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localize', 'localizationRedirect', 'localeSessionRedirect', 'localeCookieRedirect', 'localeViewPath']], function () {
 });

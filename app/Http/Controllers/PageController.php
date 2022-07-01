@@ -6,6 +6,8 @@ use Illuminate\View\View;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Repositories\MenuRepository;
+use App\Repositories\PageHomeRepository;
+use App\Repositories\PageContactRepository;
 use A17\Twill\Repositories\SettingRepository;
 
 class PageController extends Controller
@@ -31,5 +33,31 @@ class PageController extends Controller
             $view->with('setting', $this->setting);
             $view->with('menu', $this->menu);
         }
+    }
+
+    public function pageHome(PageHomeRepository $pageHome)
+    {
+        $repo = $pageHome->first()->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.pageHome', [
+            'repo' => $repo,
+        ]);
+    }
+
+    public function pageContact(PageContactRepository $pageContact)
+    {
+        $repo = $pageContact->first()->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.pageContact', [
+            'repo' => $repo,
+        ]);
     }
 }
