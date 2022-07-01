@@ -1,6 +1,20 @@
 <?php
 
 return [
+	'pages' => [
+		'title' => 'Pages',
+		'route' => 'admin.pages.pageHome',
+		'primary_navigation' => [
+			'pageHome' => [
+				'title' => 'Home',
+				'singleton' => true,
+			],
+		],
+	],
+	'menus' => [
+		'title' => 'Menus',
+		'module' => true,
+	],
 	'settings' => [
 		'title' => 'Settings',
 		'route' => 'admin.settings',
@@ -12,9 +26,5 @@ return [
 				'params' => ['section' => 'company'],
 			],
 		],
-	],
-	'menus' => [
-		'title' => 'Menus',
-		'module' => true,
 	],
 ];
