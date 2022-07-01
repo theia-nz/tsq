@@ -1378,6 +1378,12 @@ select{
 .font-bold{
   font-weight: 700;
 }
+.font-normal{
+  font-weight: 400;
+}
+.font-medium{
+  font-weight: 500;
+}
 .uppercase{
   text-transform: uppercase;
 }
@@ -1450,6 +1456,10 @@ select{
 .text-tertiary-grey{
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
+}
+.text-quaternary-grey{
+  --tw-text-opacity: 1;
+  color: rgb(222 222 223 / var(--tw-text-opacity));
 }
 .underline{
   -webkit-text-decoration-line: underline;
