@@ -8,3 +8,19 @@
 [x-cloak] {
 	display: none !important;
 }
+
+::-webkit-scrollbar {
+	@apply w-[8px] h-[8px];
+}
+
+::-webkit-scrollbar-track {
+	@apply bg-quaternary-grey;
+}
+
+::-webkit-scrollbar-thumb {
+	@apply bg-secondary-grey rounded-none;
+
+	&:hover {
+		@apply bg-secondary-grey-600;
+	}
+}

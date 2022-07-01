@@ -7,15 +7,15 @@
 		<i class="fa-solid fa-bars w-[40px] h-[40px] cursor-pointer transition-all hover:text-tertiary-grey"
 			x-on:click.stop="sideMenu = true"></i>
 	</div>
-	<div class="flex flex-row-reverse absolute inset-0" x-cloak x-show="sideMenu">
+	<div class="flex flex-row-reverse fixed inset-0" x-cloak x-show="sideMenu">
 		<div class="cursor-pointer absolute inset-0" x-show="sideMenu" x-on:click="sideMenu = false"
 			x-transition:enter="transition-all" x-transition:enter-start="opacity-0"
 			x-transition:enter-end="opacity-100" x-transition:leave="transition-all"
 			x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
 			<div class="bg-primary-grey bg-opacity-50 absolute inset-0"></div>
 		</div>
-		<div class="bg-primary-grey w-full max-w-xl pt-[80px] md:pt-[160px] px-[30px] md:px-[60px]" x-show="sideMenu"
-			x-transition:enter="transition-all" x-transition:enter-start="translate-x-full"
+		<div class="bg-primary-grey w-full max-w-xl overflow-auto pt-[80px] md:pt-[160px] px-[45px] md:px-[60px] relative"
+			x-show="sideMenu" x-transition:enter="transition-all" x-transition:enter-start="translate-x-full"
 			x-transition:enter-end="translate-x-0" x-transition:leave="transition-all"
 			x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full">
 			<div class="flex flex-col gap-y-[20px] relative">
