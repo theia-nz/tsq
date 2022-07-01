@@ -14,12 +14,12 @@
 			x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
 			<div class="bg-primary-grey bg-opacity-50 absolute inset-0"></div>
 		</div>
-		<div class="bg-primary-grey w-full max-w-xl pt-[160px] px-[60px]" x-show="sideMenu"
+		<div class="bg-primary-grey w-full max-w-xl pt-[80px] md:pt-[160px] px-[30px] md:px-[60px]" x-show="sideMenu"
 			x-transition:enter="transition-all" x-transition:enter-start="translate-x-full"
 			x-transition:enter-end="translate-x-0" x-transition:leave="transition-all"
 			x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full">
 			<div class="flex flex-col gap-y-[20px] relative">
-				<i class="fa-solid fa-xmark text-white w-[50px] h-[50px] cursor-pointer transition-all hover:text-tertiary-grey absolute top-[-90px] right-0"
+				<i class="fa-solid fa-xmark text-white w-[50px] h-[50px] cursor-pointer transition-all hover:text-tertiary-grey absolute top-[-45px] md:top-[-90px] right-0"
 					x-on:click.stop="sideMenu = false"></i>
 				@foreach($menu->getSiblings()->where('published', 1) as $menuIndex => $menuItem)
 				<div
@@ -29,7 +29,7 @@
 						'_blank' : '_self' }}" @endif></a>
 					{{ $menuItem->title }}
 					@if($menuItem->getDescendants()->count())
-					<div class="flex flex-col gap-y-[20px] pt-[20px] pl-[40px]">
+					<div class="flex flex-col gap-y-[20px] pt-[20px] pl-[20px] md:pl-[40px]">
 						@foreach ($menuItem->getDescendants() as $submenuItem)
 						<div
 							class="font-primary font-extralight uppercase text-[36px] text-tertiary-grey transition-all hover:text-quaternary-grey relative">

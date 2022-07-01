@@ -891,6 +891,48 @@ select{
 .top-\[-90px\]{
   top: -90px;
 }
+.top-\[-9\]{
+  top: -9;
+}
+.top-\[-\]{
+  top: -;
+}
+.top-\[-1\]{
+  top: -1;
+}
+.top-\[-1v\]{
+  top: -1v;
+}
+.top-\[-1vw\]{
+  top: -1vw;
+}
+.top-\[-vw\]{
+  top: -vw;
+}
+.top-\[-3vw\]{
+  top: -3vw;
+}
+.top-\[-4vw\]{
+  top: -4vw;
+}
+.top-\[-4w\]{
+  top: -4w;
+}
+.top-\[-w\]{
+  top: -w;
+}
+.top-\[-9w\]{
+  top: -9w;
+}
+.top-\[-90pw\]{
+  top: -90pw;
+}
+.top-\[-90pxw\]{
+  top: -90pxw;
+}
+.top-\[-45px\]{
+  top: -45px;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1060,6 +1102,22 @@ select{
   padding-left: 60px;
   padding-right: 60px;
 }
+.px-\[1px\]{
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.px-\[px\]{
+  padding-left: px;
+  padding-right: px;
+}
+.px-\[3px\]{
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .pt-8{
   padding-top: 2rem;
 }
@@ -1071,6 +1129,54 @@ select{
 }
 .pl-\[40px\]{
   padding-left: 40px;
+}
+.pt-\[1px\]{
+  padding-top: 1px;
+}
+.pt-\[10vhpx\]{
+  padding-top: 10vhpx;
+}
+.pt-\[10vh\]{
+  padding-top: 10vh;
+}
+.pt-\[10v\]{
+  padding-top: 10v;
+}
+.pt-\[10vw\]{
+  padding-top: 10vw;
+}
+.pt-\[1vw\]{
+  padding-top: 1vw;
+}
+.pt-\[vw\]{
+  padding-top: vw;
+}
+.pt-\[5vw\]{
+  padding-top: 5vw;
+}
+.pt-\[8vw\]{
+  padding-top: 8vw;
+}
+.pt-\[1\]{
+  padding-top: 1;
+}
+.pt-\[16\]{
+  padding-top: 16;
+}
+.pt-\[160\]{
+  padding-top: 160;
+}
+.pt-\[160p\]{
+  padding-top: 160p;
+}
+.pt-\[80px\]{
+  padding-top: 80px;
+}
+.pl-\[0px\]{
+  padding-left: 0px;
+}
+.pl-\[20px\]{
+  padding-left: 20px;
 }
 .text-center{
   text-align: center;
@@ -1249,6 +1355,9 @@ select{
   }
 }
 @media (min-width: 768px){
+  .md\:top-\[-90px\]{
+    top: -90px;
+  }
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1258,10 +1367,56 @@ select{
   .md\:border-l{
     border-left-width: 1px;
   }
+  .md\:px-\[60px\]{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .md\:px-\[6px\]{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .md\:px-\[px\]{
+    padding-left: px;
+    padding-right: px;
+  }
+  .md\:px-\[30px\]{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .md\:px-\[0px\]{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .md\:pt-\[160px\]{
+    padding-top: 160px;
+  }
+  .md\:pl-\[40px\]{
+    padding-left: 40px;
+  }
 }
 @media (min-width: 1024px){
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+@media (min-width: 1280px){
+  .xl\:top-\[-90px\]{
+    top: -90px;
+  }
+  .xl\:px-\[60px\]{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .xl\:pt-\[160px\]{
+    padding-top: 160px;
+  }
+}
+@media (min-width: 768px){
+  @media (min-width: 1280px){
+    .md\:xl\:px-\[60px\]{
+      padding-left: 60px;
+      padding-right: 60px;
+    }
   }
 }
