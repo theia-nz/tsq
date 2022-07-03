@@ -36,5 +36,10 @@ class DatabaseSeeder extends Seeder
         $this->call(TwillUsersTableSeeder::class);
         $this->call(UsersTableSeeder::class);
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+        $this->call(MenusTableSeeder::class);
+        $this->call(PageContactSlugsTableSeeder::class);
+        $this->call(PageContactsTableSeeder::class);
+        $this->call(PageHomeSlugsTableSeeder::class);
+        $this->call(PageHomesTableSeeder::class);
     }
 }
