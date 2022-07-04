@@ -2,7 +2,8 @@
 	<div class="container mx-auto px-[15px] py-[30px] flex items-center justify-between">
 		<div class="relative">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
-			<img src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}" alt="">
+			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
+				alt="">
 		</div>
 		<i class="fa-solid fa-bars w-[40px] h-[40px] cursor-pointer transition-all hover:text-tertiary-grey"
 			x-on:click.stop="sideMenu = true"></i>

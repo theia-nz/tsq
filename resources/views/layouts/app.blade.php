@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title') | {{ $setting->byKey('company_name') }}</title>
-    <link rel="icon" type="image/png" href="">
+    <link rel="icon" type="image/png"
+        href="{{ $setting->where('key', 'company_favicon')->first()->image('company_favicon') }}">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @livewireStyles
 </head>
