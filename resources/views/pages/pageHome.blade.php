@@ -24,7 +24,7 @@
 			@endforeach
 		</div>
 	</div>
-	<div class="flex items-center justify-between my-[30px]">
+	<div class="flex items-center justify-between my-[15px]">
 		<div class="inline-flex gap-x-[60px]">
 			<div class="swiper-button-prev-pagehome">
 				<img class="cursor-pointer"
@@ -44,20 +44,17 @@
 @endif
 <div class="container mx-auto px-4 flex items-center gap-x-[15px]">
 	<div class="relative">
-		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}"
-			alt="">
+		<img src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}" alt="">
 		<a class="absolute inset-0" href="tel:{{ $setting->where('key', 'new_zealand_branch_phone')->first()->value }}"
 			target="_blank"></a>
 	</div>
 	<div class="relative">
-		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_envelope')->first()->image('icon_envelope') }}"
-			alt="">
+		<img src="{{ $setting->where('key', 'icon_envelope')->first()->image('icon_envelope') }}" alt="">
 		<a class="absolute inset-0"
 			href="mailto:{{ $setting->where('key', 'new_zealand_branch_email')->first()->value }}" target="_blank"></a>
 	</div>
 	<div class="relative">
-		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_facebook')->first()->image('icon_facebook') }}"
-			alt="">
+		<img src="{{ $setting->where('key', 'icon_facebook')->first()->image('icon_facebook') }}" alt="">
 		<a class="absolute inset-0" href="{{ $setting->where('key', 'company_facebook')->first()->value }}"
 			target="_blank"></a>
 	</div>
