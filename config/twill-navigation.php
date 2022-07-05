@@ -15,6 +15,16 @@ return [
 			],
 		],
 	],
+	'modules' => [
+		'title' => 'Modules',
+		'route' => 'admin.modules.services.index',
+		'primary_navigation' => [
+			'services' => [
+				'title' => 'Services',
+				'module' => true,
+			],
+		],
+	],
 	'menus' => [
 		'title' => 'Menus',
 		'module' => true,

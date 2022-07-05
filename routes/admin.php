@@ -10,4 +10,8 @@ Route::group(['prefix' => 'pages'], function () {
 	Route::singleton('pageContact');
 });
 
+Route::group(['prefix' => 'modules'], function () {
+	Route::module('services');
+});
+
 Route::module('menus');
