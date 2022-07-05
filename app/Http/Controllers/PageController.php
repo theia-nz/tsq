@@ -50,6 +50,7 @@ class PageController extends Controller
 
         return view('pages.pageHome', [
             'repo' => $repo,
+            'setting' => $this->setting,
         ]);
     }
 

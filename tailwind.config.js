@@ -6,6 +6,7 @@ module.exports = {
     corePlugins: {
         preflight: true,
     },
+    important: false,
     content: ["./resources/**/*.blade.php", "./resources/**/*.{scss,js,vue}"],
     theme: {
         screens: {

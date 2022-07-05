@@ -1,11 +1,11 @@
-<header x-data="{ sideMenu: false }">
+<header class="sticky z-[9998] top-0" x-data="{ sideMenu: false }">
 	<div class="container mx-auto px-4 py-[15px] flex items-center justify-between">
-		<div class="relative">
+		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
 			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
 				alt="">
 		</div>
-		<i class="fa-solid fa-bars w-[40px] h-[40px] cursor-pointer transition-all hover:text-tertiary-grey"
+		<i class="fa-solid fa-bars text-secondary-grey w-[40px] h-[40px] cursor-pointer transition-all hover:text-tertiary-grey"
 			x-on:click.stop="sideMenu = true"></i>
 	</div>
 	<div class="flex flex-row-reverse fixed inset-0" x-cloak x-show="sideMenu">
