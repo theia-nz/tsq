@@ -9,6 +9,7 @@ Route::group(['prefix' => 'pages'], function () {
 	Route::singleton('pageHome');
 	Route::singleton('pageAbout');
 	Route::singleton('pageContact');
+	Route::singleton('pageService');
 });
 
 Route::group(['prefix' => 'modules'], function () {

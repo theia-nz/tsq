@@ -13,6 +13,10 @@ return [
 				'title' => 'About',
 				'singleton' => true,
 			],
+			'pageService' => [
+				'title' => 'Services',
+				'singleton' => true,
+			],
 			'pageContact' => [
 				'title' => 'Contact',
 				'singleton' => true,
