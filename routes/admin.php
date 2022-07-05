@@ -12,6 +12,7 @@ Route::group(['prefix' => 'pages'], function () {
 
 Route::group(['prefix' => 'modules'], function () {
 	Route::module('services');
+	Route::module('projects');
 });
 
 Route::module('menus');

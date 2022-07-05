@@ -23,6 +23,10 @@ return [
 				'title' => 'Services',
 				'module' => true,
 			],
+			'projects' => [
+				'title' => 'Projects',
+				'module' => true,
+			],
 		],
 	],
 	'menus' => [
