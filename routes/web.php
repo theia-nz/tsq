@@ -24,6 +24,9 @@ Route::get('/test', function () {
 
 Route::get('/', [PageController::class, 'pageHome']);
 Route::get('home', [PageController::class, 'pageHome']);
+Route::get('about', [PageController::class, 'pageAbout']);
+Route::get('services', [PageController::class, 'pageService']);
+Route::get('projects', [PageController::class, 'pageProject']);
 Route::get('contact', [PageController::class, 'pageContact']);
 
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localize', 'localizationRedirect', 'localeSessionRedirect', 'localeCookieRedirect', 'localeViewPath']], function () {

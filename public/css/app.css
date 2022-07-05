@@ -1107,6 +1107,18 @@ select{
   padding-left: 45px;
   padding-right: 45px;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-\[1px\]{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.py-\[15px\]{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .pt-8{
   padding-top: 2rem;
 }

@@ -9,6 +9,9 @@ use App\Repositories\MenuRepository;
 use App\Repositories\PageHomeRepository;
 use App\Repositories\PageContactRepository;
 use A17\Twill\Repositories\SettingRepository;
+use App\Repositories\PageAboutRepository;
+use App\Repositories\PageProjectRepository;
+use App\Repositories\PageServiceRepository;
 
 class PageController extends Controller
 {
@@ -44,6 +47,45 @@ class PageController extends Controller
         }
 
         return view('pages.pageHome', [
+            'repo' => $repo,
+        ]);
+    }
+
+    public function pageAbout(PageAboutRepository $pageAbout)
+    {
+        $repo = $pageAbout->first()->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.pageAbout', [
+            'repo' => $repo,
+        ]);
+    }
+
+    public function pageService(PageServiceRepository $pageService)
+    {
+        $repo = $pageService->first()->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.pageService', [
+            'repo' => $repo,
+        ]);
+    }
+
+    public function pageProject(PageProjectRepository $pageProject)
+    {
+        $repo = $pageProject->first()->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.pageProject', [
             'repo' => $repo,
         ]);
     }
