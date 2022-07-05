@@ -8,8 +8,9 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => 'pages'], function () {
 	Route::singleton('pageHome');
 	Route::singleton('pageAbout');
-	Route::singleton('pageContact');
 	Route::singleton('pageService');
+	Route::singleton('pageProject');
+	Route::singleton('pageContact');
 });
 
 Route::group(['prefix' => 'modules'], function () {

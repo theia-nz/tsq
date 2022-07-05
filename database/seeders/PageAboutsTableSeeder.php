@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class PageHomesTableSeeder extends Seeder
+class PageAboutsTableSeeder extends Seeder
 {
 
     /**
@@ -16,17 +16,17 @@ class PageHomesTableSeeder extends Seeder
     {
         
 
-        \DB::table('page_homes')->delete();
+        \DB::table('page_abouts')->delete();
         
-        \DB::table('page_homes')->insert(array (
+        \DB::table('page_abouts')->insert(array (
             0 => 
             array (
                 'id' => 1,
                 'deleted_at' => NULL,
-                'created_at' => '2022-07-01 03:48:32',
-                'updated_at' => '2022-07-05 01:59:18',
+                'created_at' => '2022-07-05 01:58:47',
+                'updated_at' => '2022-07-05 01:59:12',
                 'published' => 0,
-                'title' => 'Home',
+                'title' => 'About',
                 'description' => NULL,
             ),
         ));

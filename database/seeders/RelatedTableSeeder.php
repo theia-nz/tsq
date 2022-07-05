@@ -64,6 +64,33 @@ class RelatedTableSeeder extends Seeder
                 'browser_name' => 'services',
                 'position' => 1,
             ),
+            5 => 
+            array (
+                'subject_id' => 1,
+                'subject_type' => 'App\\Models\\PageHome',
+                'related_id' => 1,
+                'related_type' => 'App\\Models\\Project',
+                'browser_name' => 'projects',
+                'position' => 1,
+            ),
+            6 => 
+            array (
+                'subject_id' => 1,
+                'subject_type' => 'App\\Models\\PageHome',
+                'related_id' => 4,
+                'related_type' => 'App\\Models\\Project',
+                'browser_name' => 'projects',
+                'position' => 2,
+            ),
+            7 => 
+            array (
+                'subject_id' => 1,
+                'subject_type' => 'App\\Models\\PageHome',
+                'related_id' => 5,
+                'related_type' => 'App\\Models\\Project',
+                'browser_name' => 'projects',
+                'position' => 3,
+            ),
         ));
         
         
