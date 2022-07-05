@@ -16,17 +16,23 @@
 	</div>
 	<div class="flex items-center justify-between my-[15px]">
 		<div class="inline-flex gap-x-[60px]">
-			<div class="relative flex items-center">
+			<div class="relative flex items-center gap-x-[15px]">
+				<div class="font-primary font-light uppercase text-[21px] text-primary-grey">
+					{{ $setting->byKey('label_previous') }}
+				</div>
 				<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
 				@if($prevRepo)
 				<a class="absolute inset-0" href="{{ config('app.url') }}/projects/{{ $prevRepo->slug }}"></a>
 				@endif
 			</div>
-			<div class="relative">
+			<div class="relative flex items-center gap-x-[15px]">
 				<img src="{{ $setting->where('key', 'icon_angle_right')->first()->image('icon_angle_right') }}" alt="">
 				@if($nextRepo)
 				<a class="absolute inset-0" href="{{ config('app.url') }}/projects/{{ $nextRepo->slug }}"></a>
 				@endif
+				<div class="font-primary font-light uppercase text-[21px] text-primary-grey">
+					{{ $setting->byKey('label_next') }}
+				</div>
 			</div>
 		</div>
 		<div class="inline-flex items-center gap-x-[15px]">
@@ -35,11 +41,11 @@
 		</div>
 	</div>
 </div>
+@endif
 <div class="container mx-auto px-4">
 	<div class="font-primary font-extralight uppercase text-[36px] text-primary-grey">{{ $repo->title }}</div>
-	<div class="font-primary font-medium text-secondary-grey text-[20px]">{!! nl2br($repo->description) !!}</div>
+	<div class="font-primary font-medium text-[20px] text-secondary-grey">{!! nl2br($repo->description) !!}</div>
 </div>
-@endif
 @endsection
 
 @push('scripts')

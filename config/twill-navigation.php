@@ -60,6 +60,11 @@ return [
 				'route' => 'admin.settings',
 				'params' => ['section' => 'icon'],
 			],
+			'label' => [
+				'title' => 'Label',
+				'route' => 'admin.settings',
+				'params' => ['section' => 'label'],
+			],
 		],
 	],
 ];
