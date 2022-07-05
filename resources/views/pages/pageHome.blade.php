@@ -42,7 +42,7 @@
 	</div>
 </div>
 @endif
-<div class="flex items-center gap-x-[15px] container mx-auto px-4">
+<div class="container mx-auto px-4 flex items-center gap-x-[15px]">
 	<div class="relative">
 		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}"
 			alt="">

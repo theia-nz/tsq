@@ -891,11 +891,47 @@ select{
 .top-\[-45px\]{
   top: -45px;
 }
+.left-0{
+  left: 0px;
+}
+.left-\[\]{
+  left: ;
+}
+.left-full{
+  left: 100%;
+}
+.right-full{
+  right: 100%;
+}
 .z-50{
   z-index: 50;
 }
 .z-40{
   z-index: 40;
+}
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+.col-span-8{
+  grid-column: span 8 / span 8;
+}
+.col-span-3{
+  grid-column: span 3 / span 3;
+}
+.col-span-6{
+  grid-column: span 6 / span 6;
+}
+.col-span-7{
+  grid-column: span 7 / span 7;
+}
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+.col-start-7{
+  grid-column-start: 7;
 }
 .mx-auto{
   margin-left: auto;
@@ -962,14 +998,89 @@ select{
 .h-16{
   height: 4rem;
 }
+.h-screen{
+  height: 100vh;
+}
 .h-\[70vh\]{
   height: 70vh;
+}
+.h-\[screen\]{
+  height: screen;
+}
+.h-\[\]{
+  height: ;
+}
+.h-\[ca\]{
+  height: ca;
+}
+.h-\[calc\]{
+  height: calc;
+}
+.h-\[calc\(\)\]{
+  height: calc();
+}
+.h-\[calc\(1\)\]{
+  height: calc(1);
+}
+.h-\[calc\(10\)\]{
+  height: calc(10);
+}
+.h-\[calc\(100\)\]{
+  height: calc(100);
+}
+.h-\[calc\(100vh\)\]{
+  height: calc(100vh);
+}
+.h-\[calc\(100vh-\)\]{
+  height: calc(100vh - );
+}
+.h-\[calc\(100vh-1\)\]{
+  height: calc(100vh - 1);
+}
+.h-\[calc\(100vh-120\)\]{
+  height: calc(100vh - 120);
+}
+.h-\[calc\(100vh-120p\)\]{
+  height: calc(100vh - 120p);
+}
+.h-\[calc\(100vh-120px\)\]{
+  height: calc(100vh - 120px);
+}
+.h-\[calc\(100vh-110px\)\]{
+  height: calc(100vh - 110px);
+}
+.h-full{
+  height: 100%;
+}
+.h-\[30px\]{
+  height: 30px;
+}
+.h-\[3\]{
+  height: 3;
+}
+.h-\[30\]{
+  height: 30;
+}
+.h-\[30p\]{
+  height: 30p;
 }
 .max-h-\[80px\]{
   max-height: 80px;
 }
 .min-h-screen{
   min-height: 100vh;
+}
+.min-h-\[calc\(100vh-110px\)\]{
+  min-height: calc(100vh - 110px);
+}
+.min-h-\[calc\(10vh-110px\)\]{
+  min-height: calc(10vh - 110px);
+}
+.min-h-\[calc\(vh-110px\)\]{
+  min-height: calc(vh-110px);
+}
+.min-h-\[calc\(90vh-110px\)\]{
+  min-height: calc(90vh - 110px);
 }
 .w-\[8px\]{
   width: 8px;
@@ -986,11 +1097,59 @@ select{
 .w-full{
   width: 100%;
 }
+.w-\[100vw\]{
+  width: 100vw;
+}
+.w-\[\]{
+  width: ;
+}
+.w-\[1\]{
+  width: 1;
+}
+.w-\[10\]{
+  width: 10;
+}
+.w-\[100\]{
+  width: 100;
+}
+.w-\[100v\]{
+  width: 100v;
+}
+.w-\[ca100vw\]{
+  width: ca100vw;
+}
+.w-\[calc100vw\]{
+  width: calc100vw;
+}
+.w-\[cal100vw\]{
+  width: cal100vw;
+}
+.w-\[c100vw\]{
+  width: c100vw;
+}
+.w-\[calc\(100vw-30px\)\]{
+  width: calc(100vw - 30px);
+}
 .max-w-6xl{
   max-width: 72rem;
 }
 .max-w-xl{
   max-width: 36rem;
+}
+.max-w-\[p\]{
+  max-width: p;
+}
+.max-w-\[\]{
+  max-width: ;
+}
+.max-w-\[5\]{
+  max-width: 5;
+}
+.max-w-\[50v\]{
+  max-width: 50v;
+}
+.max-w-\[50vw\]{
+  max-width: 50vw;
 }
 .translate-x-full{
   --tw-translate-x: 100%;
@@ -1000,17 +1159,63 @@ select{
   --tw-translate-x: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.translate-x-\[-50vw\]{
+  --tw-translate-x: -50vw;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(100vw\)\]{
+  --tw-translate-x: calc(calc(100vw) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(50\)\]{
+  --tw-translate-x: calc(calc(50) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(50\%\)\]{
+  --tw-translate-x: calc(calc(50%) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(5\)\]{
+  --tw-translate-x: calc(calc(5) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(\)\]{
+  --tw-translate-x: calc(calc() * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(1\)\]{
+  --tw-translate-x: calc(calc(1) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(10\)\]{
+  --tw-translate-x: calc(calc(10) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-translate-x-\[calc\(100\%\)\]{
+  --tw-translate-x: calc(calc(100%) * -1);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-x-\[calc\(100\%\)\]{
+  --tw-translate-x: calc(100%);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .cursor-pointer{
   cursor: pointer;
 }
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+.grid-cols-12{
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
 .flex-row-reverse{
   flex-direction: row-reverse;
 }
 .flex-col{
   flex-direction: column;
+}
+.items-end{
+  align-items: flex-end;
 }
 .items-center{
   align-items: center;
@@ -1057,12 +1262,46 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-red-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
 .bg-primary-grey{
   --tw-bg-opacity: 1;
   background-color: rgb(33 36 41 / var(--tw-bg-opacity));
 }
+.bg-red-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+}
+.bg-green-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+.bg-green-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+.bg-blue-50{
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
+}
+.bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.bg-orange-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
+}
+.bg-opacity-25{
+  --tw-bg-opacity: 0.25;
+}
+.bg-opacity-5{
+  --tw-bg-opacity: 0.05;
 }
 .object-contain{
   -o-object-fit: contain;
@@ -1113,6 +1352,9 @@ select{
 }
 .text-center{
   text-align: center;
+}
+.text-right{
+  text-align: right;
 }
 .font-primary{
   font-family: neue-haas-grotesk-display;
@@ -1371,6 +1613,12 @@ select{
 }
 
 @media (min-width: 1024px){
+  .lg\:h-full{
+    height: 100%;
+  }
+  .lg\:min-h-\[calc\(90vh-110px\)\]{
+    min-height: calc(90vh - 110px);
+  }
   .lg\:object-cover{
     -o-object-fit: cover;
        object-fit: cover;
@@ -1378,5 +1626,79 @@ select{
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:absolute{
+    position: absolute;
+  }
+  .xl\:translate-x-\[-50vw\]{
+    --tw-translate-x: -50vw;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[\]{
+    --tw-translate-x: ;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[c\]{
+    --tw-translate-x: c;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[cal\]{
+    --tw-translate-x: cal;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(\)\]{
+    --tw-translate-x: calc();
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(1\)\]{
+    --tw-translate-x: calc(1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(10\)\]{
+    --tw-translate-x: calc(10);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(100\)\]{
+    --tw-translate-x: calc(100);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(100v\)\]{
+    --tw-translate-x: calc(100v);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(100vw-\)\]{
+    --tw-translate-x: calc(100vw - );
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(100vw-1\)\]{
+    --tw-translate-x: calc(100vw - 1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(100vw-100\)\]{
+    --tw-translate-x: calc(100vw - 100);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[calc\(100vw-100\%\)\]{
+    --tw-translate-x: calc(100vw - 100%);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:translate-x-\[-calc\(100vw-100\%\)\]{
+    --tw-translate-x: -calc(100vw - 100%);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:-translate-x-\[calc\(100vw-100\%\)\]{
+    --tw-translate-x: calc(calc(100vw - 100%) * -1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:-translate-x-\[calc\(100vw-\)\]{
+    --tw-translate-x: calc(calc(100vw - ) * -1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+  .xl\:-translate-x-\[calc\(100vw\)\]{
+    --tw-translate-x: calc(calc(100vw) * -1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
