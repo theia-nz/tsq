@@ -6,7 +6,7 @@ use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Model;
 
-class PageAbout extends Model 
+class PageAbout extends Model
 {
     use HasSlug, HasMedias;
 
@@ -15,13 +15,41 @@ class PageAbout extends Model
         'title',
         'description',
     ];
-    
+
     public $slugAttributes = [
         'title',
     ];
-    
+
     public $mediasParams = [
         'cover' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 16 / 9,
+                ],
+            ],
+            'mobile' => [
+                [
+                    'name' => 'mobile',
+                    'ratio' => 1,
+                ],
+            ],
+            'flexible' => [
+                [
+                    'name' => 'free',
+                    'ratio' => 0,
+                ],
+                [
+                    'name' => 'landscape',
+                    'ratio' => 16 / 9,
+                ],
+                [
+                    'name' => 'portrait',
+                    'ratio' => 3 / 5,
+                ],
+            ],
+        ],
+        'image' => [
             'default' => [
                 [
                     'name' => 'default',

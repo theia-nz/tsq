@@ -7,10 +7,10 @@
 'label' => 'Featured Image',
 ])
 
-@formField('wysiwyg', [
+@formField('input', [
 'name' => 'description',
 'label' => 'Description',
-'editSource' => true,
+'type' => 'textarea'
 ])
 
 @stop

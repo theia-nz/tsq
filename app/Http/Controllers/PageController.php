@@ -127,13 +127,13 @@ class PageController extends Controller
             $query->where('slug', $slug);
         })->where('published', 1)->first();
 
-        $prevRepo = Project::where('id', '<', $repo->id)->where('published', 1)->first();
-
-        $nextRepo = Project::where('id', '>', $repo->id)->where('published', 1)->first();
-
         if (!$repo) {
             abort(404);
         }
+
+        $prevRepo = Project::where('id', '<', $repo->id)->where('published', 1)->first();
+
+        $nextRepo = Project::where('id', '>', $repo->id)->where('published', 1)->first();
 
         return view('pages.project', [
             'repo' => $repo,
