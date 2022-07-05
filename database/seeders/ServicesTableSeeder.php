@@ -57,14 +57,10 @@ class ServicesTableSeeder extends Seeder
                 'id' => 4,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:47:13',
-                'updated_at' => '2022-07-05 01:27:58',
+                'updated_at' => '2022-07-05 02:44:31',
                 'published' => 0,
                 'title' => 'Service D',
-                'description' => 'Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-
-Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-
-Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.',
+                'description' => '<p>Vestibulum ac diam sit amet quam vehicula elemen<strong>T</strong>um sed <strong>S</strong>it amet dui. <strong>Q</strong>uisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>',
                 'position' => 4,
             ),
         ));

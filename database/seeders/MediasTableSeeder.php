@@ -84,6 +84,19 @@ class MediasTableSeeder extends Seeder
                 'caption' => NULL,
                 'filename' => '4000x3997.png',
             ),
+            5 => 
+            array (
+                'id' => 6,
+                'created_at' => '2022-07-05 02:49:56',
+                'updated_at' => '2022-07-05 02:49:56',
+                'deleted_at' => NULL,
+                'uuid' => '4fc2bf4c-8180-4fb4-bf6e-65dcb6ec4ce6/layer-1.png',
+                'alt_text' => 'Layer 1',
+                'width' => 1920,
+                'height' => 1080,
+                'caption' => NULL,
+                'filename' => 'Layer-1.png',
+            ),
         ));
         
         
