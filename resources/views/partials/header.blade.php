@@ -29,9 +29,9 @@
 						$menuItem->link : config('app.url') . '/' . $menuItem->link }}" target="{{ $menuItem->new_tab ?
 						'_blank' : '_self' }}" @endif></a>
 					{{ $menuItem->title }}
-					@if($menuItem->getDescendants()->count())
+					@if($menuItem->getDescendants()->where('published', 1)->count())
 					<div class="flex flex-col gap-y-[20px] pt-[20px] pl-[20px] md:pl-[40px]">
-						@foreach ($menuItem->getDescendants() as $submenuItem)
+						@foreach ($menuItem->getDescendants()->where('published', 1) as $submenuItem)
 						<div
 							class="font-primary {{ request()->segment(2) && str_contains($menuItem->link, request()->segment(2)) ? 'font-medium' : 'font-extralight' }} uppercase text-[36px] text-quaternary-grey transition-all hover:text-tertiary-grey relative">
 							<a class="absolute inset-0" @if($submenuItem->link) href="{{ $submenuItem->type ===
