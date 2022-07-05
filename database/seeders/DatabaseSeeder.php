@@ -40,10 +40,10 @@ class DatabaseSeeder extends Seeder
         $this->call(PageContactsTableSeeder::class);
         $this->call(PageHomeSlugsTableSeeder::class);
         $this->call(PageHomesTableSeeder::class);
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
         $this->call(ProjectSlugsTableSeeder::class);
         $this->call(ProjectsTableSeeder::class);
         $this->call(ServiceSlugsTableSeeder::class);
         $this->call(ServicesTableSeeder::class);
+        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

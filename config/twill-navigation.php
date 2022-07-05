@@ -9,6 +9,10 @@ return [
 				'title' => 'Home',
 				'singleton' => true,
 			],
+			'pageAbout' => [
+				'title' => 'About',
+				'singleton' => true,
+			],
 			'pageContact' => [
 				'title' => 'Contact',
 				'singleton' => true,
