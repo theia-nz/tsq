@@ -1,6 +1,7 @@
 @extends('twill::layouts.form')
 
 @section('contentFields')
+
 @formField('medias', [
 'name' => 'featured_image',
 'label' => 'Featured Image',
@@ -11,4 +12,5 @@
 'label' => 'Description',
 'type' => 'textarea',
 ])
+
 @stop
