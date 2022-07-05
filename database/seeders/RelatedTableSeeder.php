@@ -21,7 +21,7 @@ class RelatedTableSeeder extends Seeder
         \DB::table('related')->insert(array (
             0 => 
             array (
-                'subject_id' => 1,
+                'subject_id' => 2,
                 'subject_type' => 'App\\Models\\Project',
                 'related_id' => 1,
                 'related_type' => 'App\\Models\\Service',
@@ -30,7 +30,7 @@ class RelatedTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'subject_id' => 2,
+                'subject_id' => 3,
                 'subject_type' => 'App\\Models\\Project',
                 'related_id' => 1,
                 'related_type' => 'App\\Models\\Service',
@@ -39,15 +39,6 @@ class RelatedTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'subject_id' => 3,
-                'subject_type' => 'App\\Models\\Project',
-                'related_id' => 1,
-                'related_type' => 'App\\Models\\Service',
-                'browser_name' => 'services',
-                'position' => 1,
-            ),
-            3 => 
-            array (
                 'subject_id' => 4,
                 'subject_type' => 'App\\Models\\Project',
                 'related_id' => 2,
@@ -55,7 +46,7 @@ class RelatedTableSeeder extends Seeder
                 'browser_name' => 'services',
                 'position' => 1,
             ),
-            4 => 
+            3 => 
             array (
                 'subject_id' => 5,
                 'subject_type' => 'App\\Models\\Project',
@@ -64,7 +55,7 @@ class RelatedTableSeeder extends Seeder
                 'browser_name' => 'services',
                 'position' => 1,
             ),
-            5 => 
+            4 => 
             array (
                 'subject_id' => 1,
                 'subject_type' => 'App\\Models\\PageHome',
@@ -73,7 +64,7 @@ class RelatedTableSeeder extends Seeder
                 'browser_name' => 'projects',
                 'position' => 1,
             ),
-            6 => 
+            5 => 
             array (
                 'subject_id' => 1,
                 'subject_type' => 'App\\Models\\PageHome',
@@ -82,7 +73,7 @@ class RelatedTableSeeder extends Seeder
                 'browser_name' => 'projects',
                 'position' => 2,
             ),
-            7 => 
+            6 => 
             array (
                 'subject_id' => 1,
                 'subject_type' => 'App\\Models\\PageHome',
@@ -90,6 +81,15 @@ class RelatedTableSeeder extends Seeder
                 'related_type' => 'App\\Models\\Project',
                 'browser_name' => 'projects',
                 'position' => 3,
+            ),
+            7 => 
+            array (
+                'subject_id' => 1,
+                'subject_type' => 'App\\Models\\Project',
+                'related_id' => 1,
+                'related_type' => 'App\\Models\\Service',
+                'browser_name' => 'services',
+                'position' => 1,
             ),
         ));
         
