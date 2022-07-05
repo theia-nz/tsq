@@ -11,6 +11,8 @@ class PageHomeRepository extends ModuleRepository
 {
     use HandleSlugs, HandleMedias;
 
+    protected $relatedBrowsers = ['projects'];
+
     public function __construct(PageHome $model)
     {
         $this->model = $model;
