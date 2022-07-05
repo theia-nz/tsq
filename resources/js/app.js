@@ -26,8 +26,8 @@ const pageHome = new Swiper(".swiper-pagehome", {
         crossFade: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-pagehome",
+        prevEl: ".swiper-button-prev-pagehome",
         clickable: true,
     },
     pagination: {

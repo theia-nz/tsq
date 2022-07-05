@@ -1,12 +1,12 @@
-<header class="sticky z-[9998] top-0" x-data="{ sideMenu: false }">
+<header class="relative z-40" x-data="{ sideMenu: false }">
 	<div class="container mx-auto px-4 py-[15px] flex items-center justify-between">
 		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
 			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
 				alt="">
 		</div>
-		<i class="fa-solid fa-bars text-secondary-grey w-[40px] h-[40px] cursor-pointer transition-all hover:text-tertiary-grey"
-			x-on:click.stop="sideMenu = true"></i>
+		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_bars')->first()->image('icon_bars') }}" alt=""
+			x-on:click.stop="sideMenu = true">
 	</div>
 	<div class="flex flex-row-reverse fixed inset-0" x-cloak x-show="sideMenu">
 		<div class="cursor-pointer absolute inset-0" x-show="sideMenu" x-on:click="sideMenu = false"
@@ -20,8 +20,9 @@
 			x-transition:enter-end="translate-x-0" x-transition:leave="transition-all"
 			x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full">
 			<div class="flex flex-col gap-y-[20px] relative">
-				<i class="fa-solid fa-xmark text-quaternary-grey w-[50px] h-[50px] cursor-pointer transition-all hover:text-tertiary-grey absolute top-[-45px] md:top-[-90px] right-0"
-					x-on:click.stop="sideMenu = false"></i>
+				<img class="cursor-pointer absolute top-[-45px] md:top-[-90px] right-0"
+					src="{{ $setting->where('key', 'icon_xmark')->first()->image('icon_xmark') }}" alt=""
+					x-on:click.stop="sideMenu = false">
 				@foreach($menu->getSiblings()->where('published', 1) as $menuIndex => $menuItem)
 				<div
 					class="font-primary {{ request()->segment(1) && str_contains($menuItem->link, request()->segment(1)) ? 'font-medium' : 'font-extralight' }} uppercase text-[36px] text-quaternary-grey transition-all hover:text-tertiary-grey relative">

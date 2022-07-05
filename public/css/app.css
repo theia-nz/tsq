@@ -876,10 +876,6 @@ select{
 .relative{
   position: relative;
 }
-.sticky{
-  position: -webkit-sticky;
-  position: sticky;
-}
 .inset-0{
   top: 0px;
   right: 0px;
@@ -892,25 +888,22 @@ select{
 .right-0{
   right: 0px;
 }
-.bottom-0{
-  bottom: 0px;
-}
 .top-\[-45px\]{
   top: -45px;
 }
-.z-\[9999\]{
-  z-index: 9999;
+.z-50{
+  z-index: 50;
 }
-.z-\[9998\]{
-  z-index: 9998;
+.z-40{
+  z-index: 40;
 }
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
-.my-\[15px\]{
-  margin-top: 15px;
-  margin-bottom: 15px;
+.my-\[30px\]{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .ml-1{
   margin-left: 0.25rem;
@@ -938,9 +931,6 @@ select{
 }
 .-mt-px{
   margin-top: -1px;
-}
-.mt-\[30px\]{
-  margin-top: 30px;
 }
 .mr-\[15px\]{
   margin-right: 15px;
@@ -975,15 +965,6 @@ select{
 .h-\[70vh\]{
   height: 70vh;
 }
-.h-\[20px\]{
-  height: 20px;
-}
-.h-\[40px\]{
-  height: 40px;
-}
-.h-\[50px\]{
-  height: 50px;
-}
 .max-h-\[80px\]{
   max-height: 80px;
 }
@@ -1004,15 +985,6 @@ select{
 }
 .w-full{
   width: 100%;
-}
-.w-\[20px\]{
-  width: 20px;
-}
-.w-\[40px\]{
-  width: 40px;
-}
-.w-\[50px\]{
-  width: 50px;
 }
 .max-w-6xl{
   max-width: 72rem;
@@ -1209,10 +1181,6 @@ select{
   --tw-text-opacity: 1;
   color: rgb(33 36 41 / var(--tw-text-opacity));
 }
-.text-secondary-grey{
-  --tw-text-opacity: 1;
-  color: rgb(77 77 77 / var(--tw-text-opacity));
-}
 .text-quaternary-grey{
   --tw-text-opacity: 1;
   color: rgb(222 222 223 / var(--tw-text-opacity));
@@ -1273,8 +1241,8 @@ select{
   --swiper-pagination-color: #212429 !important;
   --swiper-pagination-bullet-inactive-color: #dededf !important;
   --swiper-pagination-bullet-inactive-opacity: 1 !important;
-  --swiper-pagination-bullet-width: 10px !important;
-  --swiper-pagination-bullet-height: 10px !important;
+  --swiper-pagination-bullet-width: 8px !important;
+  --swiper-pagination-bullet-height: 8px !important;
   --swiper-pagination-bullet-horizontal-gap: 10px !important;
   --swiper-navigation-color: #212429 !important;
   --swiper-navigation-size: 20px !important;
@@ -1309,11 +1277,6 @@ select{
 }
 
 .hover\:text-tertiary-grey:hover{
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity));
-}
-
-.group:hover .group-hover\:text-tertiary-grey{
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
 }
@@ -1395,10 +1358,6 @@ select{
   .md\:border-l{
     border-left-width: 1px;
   }
-  .md\:object-cover{
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .md\:px-\[60px\]{
     padding-left: 60px;
     padding-right: 60px;
@@ -1412,6 +1371,10 @@ select{
 }
 
 @media (min-width: 1024px){
+  .lg\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;

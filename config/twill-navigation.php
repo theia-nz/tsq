@@ -55,6 +55,11 @@ return [
 				'route' => 'admin.settings',
 				'params' => ['section' => 'company'],
 			],
+			'icon' => [
+				'title' => 'Icon',
+				'route' => 'admin.settings',
+				'params' => ['section' => 'icon'],
+			],
 		],
 	],
 ];

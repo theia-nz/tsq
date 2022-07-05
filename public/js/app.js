@@ -38829,8 +38829,8 @@ var pageHome = new swiper__WEBPACK_IMPORTED_MODULE_1__["default"](".swiper-pageh
     crossFade: true
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-pagehome",
+    prevEl: ".swiper-button-prev-pagehome",
     clickable: true
   },
   pagination: {
