@@ -29,6 +29,9 @@ Route::get('services', [PageController::class, 'pageService']);
 Route::get('projects', [PageController::class, 'pageProject']);
 Route::get('contact', [PageController::class, 'pageContact']);
 
+Route::get('services/{service}', [PageController::class, 'service']);
+Route::get('projects/{project}', [PageController::class, 'project']);
+
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localize', 'localizationRedirect', 'localeSessionRedirect', 'localeCookieRedirect', 'localeViewPath']], function () {
 });
 

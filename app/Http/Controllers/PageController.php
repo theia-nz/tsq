@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Project;
+use App\Models\Service;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Repositories\MenuRepository;
 use App\Repositories\PageHomeRepository;
-use App\Repositories\PageContactRepository;
-use A17\Twill\Repositories\SettingRepository;
 use App\Repositories\PageAboutRepository;
+use App\Repositories\PageContactRepository;
 use App\Repositories\PageProjectRepository;
 use App\Repositories\PageServiceRepository;
+use A17\Twill\Repositories\SettingRepository;
 
 class PageController extends Controller
 {
@@ -40,7 +42,7 @@ class PageController extends Controller
 
     public function pageHome(PageHomeRepository $pageHome)
     {
-        $repo = $pageHome->first()->where('published', 1)->first();
+        $repo = $pageHome->where('published', 1)->first();
 
         if (!$repo) {
             abort(404);
@@ -53,7 +55,7 @@ class PageController extends Controller
 
     public function pageAbout(PageAboutRepository $pageAbout)
     {
-        $repo = $pageAbout->first()->where('published', 1)->first();
+        $repo = $pageAbout->where('published', 1)->first();
 
         if (!$repo) {
             abort(404);
@@ -66,7 +68,7 @@ class PageController extends Controller
 
     public function pageService(PageServiceRepository $pageService)
     {
-        $repo = $pageService->first()->where('published', 1)->first();
+        $repo = $pageService->where('published', 1)->first();
 
         if (!$repo) {
             abort(404);
@@ -79,7 +81,7 @@ class PageController extends Controller
 
     public function pageProject(PageProjectRepository $pageProject)
     {
-        $repo = $pageProject->first()->where('published', 1)->first();
+        $repo = $pageProject->where('published', 1)->first();
 
         if (!$repo) {
             abort(404);
@@ -92,13 +94,43 @@ class PageController extends Controller
 
     public function pageContact(PageContactRepository $pageContact)
     {
-        $repo = $pageContact->first()->where('published', 1)->first();
+        $repo = $pageContact->where('published', 1)->first();
 
         if (!$repo) {
             abort(404);
         }
 
         return view('pages.pageContact', [
+            'repo' => $repo,
+        ]);
+    }
+
+    public function service($slug)
+    {
+        $repo = Service::whereHas('slugs', function ($query) use ($slug) {
+            $query->where('slug', $slug);
+        })->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.service', [
+            'repo' => $repo,
+        ]);
+    }
+
+    public function project($slug)
+    {
+        $repo = Project::whereHas('slugs', function ($query) use ($slug) {
+            $query->where('slug', $slug);
+        })->where('published', 1)->first();
+
+        if (!$repo) {
+            abort(404);
+        }
+
+        return view('pages.project', [
             'repo' => $repo,
         ]);
     }
