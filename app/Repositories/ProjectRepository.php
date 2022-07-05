@@ -11,6 +11,8 @@ class ProjectRepository extends ModuleRepository
 {
     use HandleSlugs, HandleMedias;
 
+    protected $relatedBrowsers = ['services'];
+
     public function __construct(Project $model)
     {
         $this->model = $model;

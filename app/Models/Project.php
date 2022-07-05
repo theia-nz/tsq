@@ -2,15 +2,16 @@
 
 namespace App\Models;
 
-use A17\Twill\Models\Behaviors\HasSlug;
-use A17\Twill\Models\Behaviors\HasMedias;
-use A17\Twill\Models\Behaviors\HasPosition;
-use A17\Twill\Models\Behaviors\Sortable;
 use A17\Twill\Models\Model;
+use A17\Twill\Models\Behaviors\HasSlug;
+use A17\Twill\Models\Behaviors\Sortable;
+use A17\Twill\Models\Behaviors\HasMedias;
+use A17\Twill\Models\Behaviors\HasRelated;
+use A17\Twill\Models\Behaviors\HasPosition;
 
 class Project extends Model implements Sortable
 {
-    use HasSlug, HasMedias, HasPosition;
+    use HasSlug, HasMedias, HasPosition, HasRelated;
 
     protected $fillable = [
         'published',

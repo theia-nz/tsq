@@ -2,6 +2,12 @@
 
 @section('contentFields')
 
+@formField('browser', [
+'moduleName' => 'services',
+'name' => 'services',
+'label' => 'Services',
+])
+
 @formField('medias', [
 'name' => 'featured_image',
 'label' => 'Featured Image',
