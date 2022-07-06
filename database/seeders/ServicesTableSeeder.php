@@ -46,8 +46,8 @@ class ServicesTableSeeder extends Seeder
                 'id' => 3,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:47:04',
-                'updated_at' => '2022-07-05 01:27:45',
-                'published' => 0,
+                'updated_at' => '2022-07-06 01:41:12',
+                'published' => 1,
                 'title' => 'Service C',
                 'description' => NULL,
                 'position' => 3,
@@ -57,11 +57,30 @@ class ServicesTableSeeder extends Seeder
                 'id' => 4,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:47:13',
-                'updated_at' => '2022-07-05 23:04:36',
-                'published' => 0,
+                'updated_at' => '2022-07-06 02:00:50',
+                'published' => 1,
                 'title' => 'Service D',
-                'description' => NULL,
+                'description' => 'Concept Design
+
+Resource Consent Prepare and Application
+
+Building Consent Prepare and Application
+
+Cooperation with Consultants
+
+Cooperation with Construction Works',
                 'position' => 4,
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'deleted_at' => NULL,
+                'created_at' => '2022-07-06 01:39:03',
+                'updated_at' => '2022-07-06 01:41:16',
+                'published' => 1,
+                'title' => 'Service E',
+                'description' => NULL,
+                'position' => 5,
             ),
         ));
         

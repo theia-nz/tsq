@@ -331,6 +331,19 @@ class MediasTableSeeder extends Seeder
                 'caption' => NULL,
                 'filename' => 'Entrance-Picture.jpg',
             ),
+            24 => 
+            array (
+                'id' => 25,
+                'created_at' => '2022-07-06 00:58:25',
+                'updated_at' => '2022-07-06 00:58:25',
+                'deleted_at' => NULL,
+                'uuid' => '1039806b-ccca-4d47-9d94-83a4b56ba346/icon-angle-down.png',
+                'alt_text' => 'Icon Angle Down',
+                'width' => 18,
+                'height' => 9,
+                'caption' => NULL,
+                'filename' => 'icon-angle-down.png',
+            ),
         ));
         
         

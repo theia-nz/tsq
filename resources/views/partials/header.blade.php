@@ -1,5 +1,5 @@
 <header class="relative z-40" x-data="{ sideMenu: false }">
-	<div class="container mx-auto px-4 py-[15px] flex items-center justify-between">
+	<div class="container mx-auto px-4 pt-[15px] pb-[30px] flex items-center justify-between">
 		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
 			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
@@ -25,16 +25,16 @@
 					x-on:click.stop="sideMenu = false">
 				@foreach($menu->getSiblings()->where('published', 1) as $menuIndex => $menuItem)
 				<div
-					class="font-primary {{ request()->segment(1) && str_contains($menuItem->link, request()->segment(1)) ? 'font-medium' : 'font-extralight' }} uppercase text-[36px] text-quaternary-grey transition-all hover:text-tertiary-grey relative">
+					class="font-primary {{ request()->segment(1) === $menuItem->link ? 'font-medium' : 'font-extralight' }} uppercase text-[36px] text-quaternary-grey transition-all hover:text-tertiary-grey relative">
 					<a class="absolute inset-0" @if($menuItem->link) href="{{ $menuItem->type === 'external' ?
 						$menuItem->link : config('app.url') . '/' . $menuItem->link }}" target="{{ $menuItem->new_tab ?
-						'_blank' : '_self' }}" @endif></a>
+						'_blank' : '_self' }}" @else href="{{ config('app.url') }}" @endif></a>
 					{{ $menuItem->title }}
 					@if($menuItem->getDescendants()->where('published', 1)->count())
 					<div class="flex flex-col gap-y-[20px] pt-[20px] pl-[20px] md:pl-[40px]">
 						@foreach ($menuItem->getDescendants()->where('published', 1) as $submenuItem)
 						<div
-							class="font-primary {{ request()->segment(2) && str_contains($menuItem->link, request()->segment(2)) ? 'font-medium' : 'font-extralight' }} uppercase text-[36px] text-quaternary-grey transition-all hover:text-tertiary-grey relative">
+							class="font-primary {{ request()->segment(2) === $submenuItem->link ? 'font-medium' : 'font-extralight' }} uppercase text-[36px] text-quaternary-grey transition-all hover:text-tertiary-grey relative">
 							<a class="absolute inset-0" @if($submenuItem->link) href="{{ $submenuItem->type ===
 								'external' ?
 								$submenuItem->link : config('app.url') . '/' . $submenuItem->link }}" target="{{

@@ -5,7 +5,7 @@
 @section('content')
 <div class="relative">
 	<div class="container mx-auto px-4">
-		<div class="grid grid-cols-12 gap-y-[30px] lg:gap-y-0 lg:min-h-[calc(90vh-110px)]">
+		<div class="grid grid-cols-12 gap-y-[40px] lg:gap-y-0 lg:min-h-[80vh]">
 			<div class="col-span-12 lg:col-span-3 flex items-end">
 				<div class="font-primary font-extralight uppercase text-[36px] text-primary-grey">
 					{{ $repo->header_a }}
@@ -21,7 +21,7 @@
 					<img class="lg:absolute lg:right-0 lg:max-w-[45vw]" src="{{ $repo->image('image_a') }}" alt="">
 				</div>
 				<div
-					class="self-end flex items-center gap-x-[15px] font-primary font-extralight uppercase text-[21px] text-primary-grey relative">
+					class="self-end flex items-center gap-x-[15px] font-primary font-extralight uppercase text-[21px] text-primary-grey transition-all hover:text-tertiary-grey relative">
 					{{ $repo->link_label_a }}
 					<img src="{{ $setting->where('key', 'icon_angle_right')->first()->image('icon_angle_right') }}"
 						alt="">

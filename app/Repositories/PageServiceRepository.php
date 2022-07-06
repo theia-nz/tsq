@@ -11,6 +11,8 @@ class PageServiceRepository extends ModuleRepository
 {
     use HandleSlugs, HandleMedias;
 
+    protected $relatedBrowsers = ['services'];
+
     public function __construct(PageService $model)
     {
         $this->model = $model;

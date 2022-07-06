@@ -253,6 +253,15 @@ class SettingsTableSeeder extends Seeder
                 'key' => 'label_next',
                 'section' => 'label',
             ),
+            26 => 
+            array (
+                'id' => 27,
+                'created_at' => '2022-07-06 00:58:28',
+                'updated_at' => '2022-07-06 00:58:28',
+                'deleted_at' => NULL,
+                'key' => 'icon_angle_down',
+                'section' => 'icon',
+            ),
         ));
         
         

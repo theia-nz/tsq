@@ -9,7 +9,7 @@
 		<div class="swiper-wrapper">
 			@foreach ($repo->images('images') as $image)
 			<div class="swiper-slide flex justify-center">
-				<img class="object-contain lg:object-cover object-center w-full h-[70vh]" src="{{ $image }}" alt="">
+				<img class="object-contain lg:object-cover object-center w-full h-[65vh]" src="{{ $image }}" alt="">
 			</div>
 			@endforeach
 		</div>

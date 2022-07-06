@@ -11,13 +11,13 @@
 	x-transition:leave-end="opacity-0" x-on:click="loadingScreen = false">
 	<img class="object-cover object-center w-full" src="{{ $repo->image('image_a') }}" alt="">
 </div>
-@if($repo->getRelated('projects')->count())
+@if($repo->getRelated('projects')->where('published', 1)->count())
 <div class="container mx-auto px-4">
 	<div class="swiper swiper-pagehome">
 		<div class="swiper-wrapper">
-			@foreach ($repo->getRelated('projects') as $project)
+			@foreach ($repo->getRelated('projects')->where('published', 1) as $project)
 			<div class="swiper-slide flex justify-center relative">
-				<img class="object-contain lg:object-cover object-center w-full h-[70vh]"
+				<img class="object-contain lg:object-cover object-center w-full h-[65vh]"
 					src="{{ $project->image('featured_image') }}" alt="">
 				<a class="absolute inset-0" href="{{ config('app.url') }}/projects/{{ $project->slug }}"></a>
 			</div>
@@ -42,7 +42,7 @@
 	</div>
 </div>
 @endif
-<div class="container mx-auto px-4 flex items-center gap-x-[15px]">
+<div class="container mx-auto px-4 my-[30px] flex items-center gap-x-[15px]">
 	<div class="relative">
 		<img src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}" alt="">
 		<a class="absolute inset-0" href="tel:{{ $setting->where('key', 'new_zealand_branch_phone')->first()->value }}"
