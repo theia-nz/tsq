@@ -24,10 +24,10 @@ class PageAboutsTableSeeder extends Seeder
                 'id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 01:58:47',
-                'updated_at' => '2022-07-05 02:22:53',
+                'updated_at' => '2022-07-05 23:10:15',
                 'published' => 1,
                 'title' => 'About',
-                'description' => NULL,
+                'description' => '<p>Our extensive experience and <span class="about">T</span>echnical expertise allow us to deliver a range of projects with <span class="about">S</span>peed and accuracy. We pride ourselves in providing high <span class="about">Q</span>uality service and creating unique architectural designs that respond successfully to the needs of our clients, the environment and the market.</p>',
             ),
         ));
         

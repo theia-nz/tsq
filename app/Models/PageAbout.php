@@ -14,6 +14,11 @@ class PageAbout extends Model
         'published',
         'title',
         'description',
+
+        'header_a',
+        'paragraph_a',
+        'link_label_a',
+        'link_a'
     ];
 
     public $slugAttributes = [
@@ -49,7 +54,7 @@ class PageAbout extends Model
                 ],
             ],
         ],
-        'image' => [
+        'image_a' => [
             'default' => [
                 [
                     'name' => 'default',

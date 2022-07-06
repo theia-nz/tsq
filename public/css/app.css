@@ -906,11 +906,8 @@ select{
 .col-span-6{
   grid-column: span 6 / span 6;
 }
-.col-span-4{
-  grid-column: span 4 / span 4;
-}
-.col-span-2{
-  grid-column: span 2 / span 2;
+.col-span-12{
+  grid-column: span 12 / span 12;
 }
 .mx-auto{
   margin-left: auto;
@@ -1010,23 +1007,14 @@ select{
 .max-w-6xl{
   max-width: 72rem;
 }
-.max-w-\[40vw\]{
-  max-width: 40vw;
+.max-w-\[45vw\]{
+  max-width: 45vw;
 }
 .max-w-\[50vw\]{
   max-width: 50vw;
 }
 .max-w-xl{
   max-width: 36rem;
-}
-.max-w-\[0vw\]{
-  max-width: 0vw;
-}
-.max-w-\[4vw\]{
-  max-width: 4vw;
-}
-.max-w-\[45vw\]{
-  max-width: 45vw;
 }
 .translate-x-full{
   --tw-translate-x: 100%;
@@ -1051,11 +1039,20 @@ select{
 .flex-col{
   flex-direction: column;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 .items-end{
   align-items: flex-end;
 }
 .items-center{
   align-items: center;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-end{
+  justify-content: flex-end;
 }
 .justify-center{
   justify-content: center;
@@ -1074,9 +1071,17 @@ select{
 .gap-y-\[20px\]{
   row-gap: 20px;
 }
-.gap-x-\[30px\]{
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+.gap-y-\[100px\]{
+  row-gap: 100px;
+}
+.gap-y-\[60px\]{
+  row-gap: 60px;
+}
+.gap-y-\[30px\]{
+  row-gap: 30px;
+}
+.self-end{
+  align-self: flex-end;
 }
 .overflow-auto{
   overflow: auto;
@@ -1455,6 +1460,33 @@ select{
 }
 
 @media (min-width: 1024px){
+  .lg\:absolute{
+    position: absolute;
+  }
+  .lg\:left-0{
+    left: 0px;
+  }
+  .lg\:right-0{
+    right: 0px;
+  }
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+  .lg\:min-h-\[calc\(90vh-110px\)\]{
+    min-height: calc(90vh - 110px);
+  }
+  .lg\:w-\[100vw\]{
+    width: 100vw;
+  }
+  .lg\:max-w-\[45vw\]{
+    max-width: 45vw;
+  }
+  .lg\:gap-y-0{
+    row-gap: 0px;
+  }
   .lg\:object-cover{
     -o-object-fit: cover;
        object-fit: cover;

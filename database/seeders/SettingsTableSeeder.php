@@ -163,6 +163,96 @@ class SettingsTableSeeder extends Seeder
                 'key' => 'china_branch_email',
                 'section' => 'company',
             ),
+            16 => 
+            array (
+                'id' => 17,
+                'created_at' => '2022-07-05 05:37:47',
+                'updated_at' => '2022-07-05 05:37:47',
+                'deleted_at' => NULL,
+                'key' => 'icon_bars',
+                'section' => 'icon',
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'created_at' => '2022-07-05 05:37:47',
+                'updated_at' => '2022-07-05 05:37:47',
+                'deleted_at' => NULL,
+                'key' => 'icon_angle_left',
+                'section' => 'icon',
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'created_at' => '2022-07-05 05:37:47',
+                'updated_at' => '2022-07-05 05:37:47',
+                'deleted_at' => NULL,
+                'key' => 'icon_angle_right',
+                'section' => 'icon',
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'created_at' => '2022-07-05 05:37:47',
+                'updated_at' => '2022-07-05 05:37:47',
+                'deleted_at' => NULL,
+                'key' => 'icon_angle_up',
+                'section' => 'icon',
+            ),
+            20 => 
+            array (
+                'id' => 21,
+                'created_at' => '2022-07-05 05:47:58',
+                'updated_at' => '2022-07-05 05:47:58',
+                'deleted_at' => NULL,
+                'key' => 'icon_xmark',
+                'section' => 'icon',
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'created_at' => '2022-07-05 05:59:07',
+                'updated_at' => '2022-07-05 05:59:07',
+                'deleted_at' => NULL,
+                'key' => 'icon_phone',
+                'section' => 'icon',
+            ),
+            22 => 
+            array (
+                'id' => 23,
+                'created_at' => '2022-07-05 05:59:07',
+                'updated_at' => '2022-07-05 05:59:07',
+                'deleted_at' => NULL,
+                'key' => 'icon_envelope',
+                'section' => 'icon',
+            ),
+            23 => 
+            array (
+                'id' => 24,
+                'created_at' => '2022-07-05 05:59:07',
+                'updated_at' => '2022-07-05 05:59:07',
+                'deleted_at' => NULL,
+                'key' => 'icon_facebook',
+                'section' => 'icon',
+            ),
+            24 => 
+            array (
+                'id' => 25,
+                'created_at' => '2022-07-05 22:46:11',
+                'updated_at' => '2022-07-05 22:46:11',
+                'deleted_at' => NULL,
+                'key' => 'label_previous',
+                'section' => 'label',
+            ),
+            25 => 
+            array (
+                'id' => 26,
+                'created_at' => '2022-07-05 22:46:11',
+                'updated_at' => '2022-07-05 22:46:11',
+                'deleted_at' => NULL,
+                'key' => 'label_next',
+                'section' => 'label',
+            ),
         ));
         
         

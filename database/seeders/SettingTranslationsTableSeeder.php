@@ -180,6 +180,28 @@ China',
                 'active' => 1,
                 'value' => 'admin@tsq.co.nz',
             ),
+            14 => 
+            array (
+                'id' => 15,
+                'setting_id' => 25,
+                'deleted_at' => NULL,
+                'created_at' => '2022-07-05 22:46:11',
+                'updated_at' => '2022-07-05 22:46:11',
+                'locale' => 'en',
+                'active' => 1,
+                'value' => 'Previous',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'setting_id' => 26,
+                'deleted_at' => NULL,
+                'created_at' => '2022-07-05 22:46:11',
+                'updated_at' => '2022-07-05 22:46:11',
+                'locale' => 'en',
+                'active' => 1,
+                'value' => 'Next',
+            ),
         ));
         
         

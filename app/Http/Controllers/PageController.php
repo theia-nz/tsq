@@ -64,6 +64,7 @@ class PageController extends Controller
 
         return view('pages.pageAbout', [
             'repo' => $repo,
+            'setting' => $this->setting,
         ]);
     }
 

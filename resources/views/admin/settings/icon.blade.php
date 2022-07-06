@@ -42,4 +42,9 @@
 'label' => 'Icon Angle Up',
 ])
 
+@formField('medias', [
+'name' => 'icon_angle_down',
+'label' => 'Icon Angle Down',
+])
+
 @stop
