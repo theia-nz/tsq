@@ -65,3 +65,7 @@
 	bottom: 0 !important;
 	left: 0 !important;
 }
+
+.about {
+	@apply font-bold text-tertiary-grey;
+}
