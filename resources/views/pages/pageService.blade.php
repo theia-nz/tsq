@@ -18,7 +18,7 @@
 		<div class="col-span-12 lg:col-span-3 flex flex-col items-center lg:items-end justify-end">
 			<div class="relative">
 				<img class="object-cover object-center h-[50vh]" src="{{ $service->image('featured_image') }}" alt="">
-				<a class="absolute inset-0" href="{{ route('service', $project->getSlug()) }}"></a>
+				<a class="absolute inset-0" href="{{ route('service', $service->getSlug()) }}"></a>
 			</div>
 			<div class="font-primary text-[24px] text-primary-grey mt-[20px] lg:mt-[60px]">{{ $service->title }}</div>
 		</div>
