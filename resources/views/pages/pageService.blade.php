@@ -16,7 +16,8 @@
 		</div>
 		@else
 		<div class="col-span-12 lg:col-span-3 flex flex-col items-center lg:items-end justify-end">
-			<div class="relative">
+			<div class="relative group">
+				<div class="absolute inset-0 bg-white bg-opacity-0 transition-all group-hover:bg-opacity-50"></div>
 				<img class="object-cover object-center h-[50vh]" src="{{ $service->image('featured_image') }}" alt="">
 				<a class="absolute inset-0" href="{{ route('service', $service->getSlug()) }}"></a>
 			</div>

@@ -52,7 +52,7 @@ class ProjectsTableSeeder extends Seeder
                 'id' => 3,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 01:29:31',
-                'updated_at' => '2022-07-05 22:01:59',
+                'updated_at' => '2022-07-07 03:34:43',
                 'published' => 1,
                 'title' => 'Project A3',
                 'description' => 'This is project a3.',

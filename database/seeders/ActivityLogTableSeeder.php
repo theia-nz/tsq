@@ -2419,6 +2419,36 @@ class ActivityLogTableSeeder extends Seeder
                 'created_at' => '2022-07-06 02:29:24',
                 'updated_at' => '2022-07-06 02:29:24',
             ),
+            160 => 
+            array (
+                'id' => 161,
+                'log_name' => 'default',
+                'description' => 'unpublished',
+                'subject_id' => 3,
+                'subject_type' => 'App\\Models\\Project',
+                'event' => NULL,
+                'causer_id' => 1,
+                'causer_type' => 'users',
+                'properties' => '[]',
+                'batch_uuid' => NULL,
+                'created_at' => '2022-07-07 01:36:29',
+                'updated_at' => '2022-07-07 01:36:29',
+            ),
+            161 => 
+            array (
+                'id' => 162,
+                'log_name' => 'default',
+                'description' => 'published',
+                'subject_id' => 3,
+                'subject_type' => 'App\\Models\\Project',
+                'event' => NULL,
+                'causer_id' => 1,
+                'causer_type' => 'users',
+                'properties' => '[]',
+                'batch_uuid' => NULL,
+                'created_at' => '2022-07-07 03:34:43',
+                'updated_at' => '2022-07-07 03:34:43',
+            ),
         ));
         
         
