@@ -24,6 +24,12 @@
 'type' => 'url',
 ])
 
+@formField('input', [
+'name' => 'company_copyright',
+'label' => 'Company Copyright',
+'type' => 'text',
+])
+
 @stop
 
 @section('fieldsets')

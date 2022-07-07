@@ -104,6 +104,7 @@ class PageController extends Controller
 
         return view('pages.pageContact', [
             'repo' => $repo,
+            'setting' => $this->setting,
         ]);
     }
 
