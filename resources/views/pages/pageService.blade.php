@@ -24,7 +24,7 @@
 		</div>
 		@endif
 		@endforeach
-		<div class="col-span-12 flex items-end">
+		<div class="order-first lg:order-none col-span-12 flex items-end">
 			<div class="font-primary font-extralight uppercase text-[36px] text-primary-grey">
 				{{ $repo->header_a }}
 			</div>
