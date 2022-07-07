@@ -19,7 +19,7 @@
 			<div class="relative flex items-center gap-x-[15px]">
 				<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
 				@if($prevRepo)
-				<a class="absolute inset-0" href="{{ config('app.url') }}/projects/{{ $prevRepo->slug }}"></a>
+				<a class="absolute inset-0" href="{{ route('project', $prevRepo->getSlug()) }}"></a>
 				@endif
 				<div class="font-primary font-light uppercase text-[21px] text-primary-grey">
 					{{ $setting->byKey('label_previous') }}
@@ -31,7 +31,7 @@
 				</div>
 				<img src="{{ $setting->where('key', 'icon_angle_right')->first()->image('icon_angle_right') }}" alt="">
 				@if($nextRepo)
-				<a class="absolute inset-0" href="{{ config('app.url') }}/projects/{{ $nextRepo->slug }}"></a>
+				<a class="absolute inset-0" href="{{ route('project', $nextRepo->getSlug()) }}"></a>
 				@endif
 			</div>
 		</div>

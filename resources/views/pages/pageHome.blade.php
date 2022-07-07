@@ -19,7 +19,7 @@
 			<div class="swiper-slide flex justify-center relative">
 				<img class="object-contain lg:object-cover object-center w-full h-[65vh]"
 					src="{{ $project->image('featured_image') }}" alt="">
-				<a class="absolute inset-0" href="{{ config('app.url') }}/projects/{{ $project->slug }}"></a>
+				<a class="absolute inset-0" href="{{ route('project', $project->getSlug()) }}"></a>
 			</div>
 			@endforeach
 		</div>
