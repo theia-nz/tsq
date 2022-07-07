@@ -41,6 +41,16 @@ return [
 			],
 		],
 	],
+	'forms' => [
+		'title' => 'Forms',
+		'route' => 'admin.forms.formContact',
+		'primary_navigation' => [
+			'formContact' => [
+				'title' => 'Contact Form',
+				'singleton' => true,
+			],
+		],
+	],
 	'menus' => [
 		'title' => 'Menus',
 		'module' => true,

@@ -18,4 +18,8 @@ Route::group(['prefix' => 'modules'], function () {
 	Route::module('projects');
 });
 
+Route::group(['prefix' => 'forms'], function () {
+	Route::singleton('formContact');
+});
+
 Route::module('menus');

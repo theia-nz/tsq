@@ -4,13 +4,19 @@
 
 @formField('input', [
 'name' => 'label_previous',
-'label' => 'Previous',
+'label' => 'Label Previous',
 'type' => 'text',
 ])
 
 @formField('input', [
 'name' => 'label_next',
-'label' => 'Next',
+'label' => 'Label Next',
+'type' => 'text',
+])
+
+@formField('input', [
+'name' => 'label_tel',
+'label' => 'Label Tel',
 'type' => 'text',
 ])
 

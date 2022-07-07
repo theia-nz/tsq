@@ -2,22 +2,37 @@
 
 namespace App\Models;
 
-use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Model;
 
-class PageContact extends Model
+class FormContact extends Model
 {
-    use HasSlug, HasMedias;
+    use HasMedias;
 
     protected $fillable = [
         'published',
         'title',
         'description',
+
+        'form_title',
+        'label_name',
+        'error_name',
+        'label_phone',
+        'error_phone',
+        'label_email',
+        'error_email_1',
+        'error_email_2',
+        'label_message',
+        'error_message',
+        'error_recaptcha',
+        'label_submit',
+        'message_success',
+        'message_failure',
+        'recipients',
     ];
 
-    public $slugAttributes = [
-        'title',
+    protected $casts = [
+        'recipients' => 'array',
     ];
 
     public $mediasParams = [
