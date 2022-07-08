@@ -16,7 +16,7 @@
         </div>
     </div>
     @if($can_load_more)
-    <div class="h-[80px]" x-data="" x-intersect="$wire.call('loadMore')">
+    <div class="h-[80px]" x-data="" x-intersect.margin.50vh="$wire.call('loadMore')">
     </div>
     @else
     <div class="h-[80px]">
