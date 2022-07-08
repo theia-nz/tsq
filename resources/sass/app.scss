@@ -5,6 +5,16 @@
 @tailwind utilities;
 // @tailwind screens;
 
+html,
+body {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.grecaptcha-badge {
+	visibility: hidden;
+}
+
 [x-cloak] {
 	display: none !important;
 }
