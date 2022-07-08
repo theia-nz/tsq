@@ -118,6 +118,14 @@ class PageController extends Controller
             abort(404);
         }
 
+        $projects = Project::whereHas('relatedItems', function ($relatedItem) use ($repo) {
+            $relatedItem->where('related_type', 'App\Models\Service')->where('related_id', $repo->id);
+        })->where('published', 1)->get();
+
+        if (!$projects->count()) {
+            return redirect()->route('home');
+        }
+
         return view('pages.service', [
             'repo' => $repo,
         ]);

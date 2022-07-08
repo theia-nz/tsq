@@ -1,8 +1,11 @@
-@extends('twill::layouts.form')
+@extends('twill::layouts.form', [
+'disableContentFieldset' => true,
+])
 
-@section('contentFields')
-    @formField('input', [
-        'name' => 'description',
-        'label' => 'Description',
-    ])
+@section('fieldsets')
+
+@formFieldset(['title' => 'Section A',])
+
+@endformFieldset
+
 @stop

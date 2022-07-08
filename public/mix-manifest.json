@@ -1,6 +1,6 @@
 {
-    "/js/alpine.js": "/js/alpine.js",
-    "/js/google-maps.js": "/js/google-maps.js",
-    "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/js/alpine.js": "/js/alpine.js?id=635c2248965af38c198e84759643d60d",
+    "/js/google-maps.js": "/js/google-maps.js?id=d41d8cd98f00b204e9800998ecf8427e",
+    "/js/app.js": "/js/app.js?id=bb28e2d421ec7617bf74a9bde92fe9ca",
+    "/css/app.css": "/css/app.css?id=88b2494111b3ab7ba56d714c2e7bb0db"
 }

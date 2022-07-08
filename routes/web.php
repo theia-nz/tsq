@@ -22,7 +22,7 @@ Route::get('/test', function () {
     return view('pages.index');
 });
 
-Route::get('/', [PageController::class, 'pageHome']);
+Route::get('/', [PageController::class, 'pageHome'])->name('home');
 Route::get('home', [PageController::class, 'pageHome']);
 Route::get('about', [PageController::class, 'pageAbout']);
 Route::get('services', [PageController::class, 'pageService']);

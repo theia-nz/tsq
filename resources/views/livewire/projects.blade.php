@@ -4,7 +4,7 @@
             @foreach($projects as $project)
             <div class="lg:col-start-1 col-span-12 lg:col-span-3 text-left mb-[30px] lg:mb-0 lg:text-right">
                 <div class="font-primary text-[24px] text-primary-grey">{{ $project->title }}</div>
-                <div class="font-primary font-medium text-[21px] text-secondary-grey">{{ $project->description }}</div>
+                <div class="font-primary font-medium text-[20px] text-secondary-grey">{{ $project->description }}</div>
             </div>
             <div class="lg:col-start-6 col-span-12 lg:col-span-7 mb-[60px] lg:mb-0 relative group">
                 <div class="absolute inset-0 bg-white bg-opacity-0 transition-all group-hover:bg-opacity-50"></div>
