@@ -262,6 +262,24 @@ class SettingsTableSeeder extends Seeder
                 'key' => 'icon_angle_down',
                 'section' => 'icon',
             ),
+            27 => 
+            array (
+                'id' => 29,
+                'created_at' => '2022-07-07 23:08:29',
+                'updated_at' => '2022-07-07 23:08:29',
+                'deleted_at' => NULL,
+                'key' => 'company_footer',
+                'section' => 'company',
+            ),
+            28 => 
+            array (
+                'id' => 30,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'key' => 'company_copyright',
+                'section' => 'company',
+            ),
         ));
         
         

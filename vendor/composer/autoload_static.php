@@ -2040,6 +2040,7 @@ class ComposerStaticInit89fd82d80c8f0f286118a7dbc0605702
         'Database\\Seeders\\FileablesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/FileablesTableSeeder.php',
         'Database\\Seeders\\FilesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/FilesTableSeeder.php',
         'Database\\Seeders\\FormContactSeeder' => __DIR__ . '/../..' . '/database/seeders/FormContactSeeder.php',
+        'Database\\Seeders\\FormContactsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/FormContactsTableSeeder.php',
         'Database\\Seeders\\MediablesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/MediablesTableSeeder.php',
         'Database\\Seeders\\MediasTableSeeder' => __DIR__ . '/../..' . '/database/seeders/MediasTableSeeder.php',
         'Database\\Seeders\\MenusTableSeeder' => __DIR__ . '/../..' . '/database/seeders/MenusTableSeeder.php',

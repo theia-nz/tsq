@@ -24,7 +24,7 @@ class PageContactsTableSeeder extends Seeder
                 'id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-01 03:51:46',
-                'updated_at' => '2022-07-05 02:23:20',
+                'updated_at' => '2022-07-07 22:40:22',
                 'published' => 1,
                 'title' => 'Contact',
                 'description' => NULL,

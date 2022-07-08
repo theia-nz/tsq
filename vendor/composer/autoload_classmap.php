@@ -1291,6 +1291,7 @@ return array(
     'Database\\Seeders\\FileablesTableSeeder' => $baseDir . '/database/seeders/FileablesTableSeeder.php',
     'Database\\Seeders\\FilesTableSeeder' => $baseDir . '/database/seeders/FilesTableSeeder.php',
     'Database\\Seeders\\FormContactSeeder' => $baseDir . '/database/seeders/FormContactSeeder.php',
+    'Database\\Seeders\\FormContactsTableSeeder' => $baseDir . '/database/seeders/FormContactsTableSeeder.php',
     'Database\\Seeders\\MediablesTableSeeder' => $baseDir . '/database/seeders/MediablesTableSeeder.php',
     'Database\\Seeders\\MediasTableSeeder' => $baseDir . '/database/seeders/MediasTableSeeder.php',
     'Database\\Seeders\\MenusTableSeeder' => $baseDir . '/database/seeders/MenusTableSeeder.php',

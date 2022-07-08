@@ -21,126 +21,6 @@ class MediablesTableSeeder extends Seeder
         \DB::table('mediables')->insert(array (
             0 => 
             array (
-                'id' => 55,
-                'created_at' => '2022-07-04 22:31:09',
-                'updated_at' => '2022-07-04 22:31:09',
-                'deleted_at' => NULL,
-                'mediable_id' => 2,
-                'mediable_type' => 'A17\\Twill\\Models\\Setting',
-                'media_id' => 2,
-                'crop_x' => 0,
-                'crop_y' => 0,
-                'crop_w' => 691,
-                'crop_h' => 390,
-                'role' => 'company_logo',
-                'crop' => 'default',
-                'lqip_data' => NULL,
-                'ratio' => 'default',
-                'metadatas' => '{"video": null, "altText": null, "caption": null}',
-                'locale' => 'en',
-            ),
-            1 => 
-            array (
-                'id' => 56,
-                'created_at' => '2022-07-04 22:31:09',
-                'updated_at' => '2022-07-04 22:31:09',
-                'deleted_at' => NULL,
-                'mediable_id' => 2,
-                'mediable_type' => 'A17\\Twill\\Models\\Setting',
-                'media_id' => 2,
-                'crop_x' => 60,
-                'crop_y' => 0,
-                'crop_w' => 390,
-                'crop_h' => 390,
-                'role' => 'company_logo',
-                'crop' => 'mobile',
-                'lqip_data' => NULL,
-                'ratio' => 'mobile',
-                'metadatas' => '{"video": null, "altText": null, "caption": null}',
-                'locale' => 'en',
-            ),
-            2 => 
-            array (
-                'id' => 57,
-                'created_at' => '2022-07-04 22:31:09',
-                'updated_at' => '2022-07-04 22:31:09',
-                'deleted_at' => NULL,
-                'mediable_id' => 2,
-                'mediable_type' => 'A17\\Twill\\Models\\Setting',
-                'media_id' => 2,
-                'crop_x' => 0,
-                'crop_y' => 0,
-                'crop_w' => 1428,
-                'crop_h' => 390,
-                'role' => 'company_logo',
-                'crop' => 'flexible',
-                'lqip_data' => NULL,
-                'ratio' => 'free',
-                'metadatas' => '{"video": null, "altText": null, "caption": null}',
-                'locale' => 'en',
-            ),
-            3 => 
-            array (
-                'id' => 58,
-                'created_at' => '2022-07-04 22:31:09',
-                'updated_at' => '2022-07-04 22:31:09',
-                'deleted_at' => NULL,
-                'mediable_id' => 3,
-                'mediable_type' => 'A17\\Twill\\Models\\Setting',
-                'media_id' => 1,
-                'crop_x' => 0,
-                'crop_y' => 32,
-                'crop_w' => 80,
-                'crop_h' => 45,
-                'role' => 'company_favicon',
-                'crop' => 'default',
-                'lqip_data' => NULL,
-                'ratio' => 'default',
-                'metadatas' => '{"video": null, "altText": null, "caption": null}',
-                'locale' => 'en',
-            ),
-            4 => 
-            array (
-                'id' => 59,
-                'created_at' => '2022-07-04 22:31:09',
-                'updated_at' => '2022-07-04 22:31:09',
-                'deleted_at' => NULL,
-                'mediable_id' => 3,
-                'mediable_type' => 'A17\\Twill\\Models\\Setting',
-                'media_id' => 1,
-                'crop_x' => 0,
-                'crop_y' => 0,
-                'crop_w' => 78,
-                'crop_h' => 78,
-                'role' => 'company_favicon',
-                'crop' => 'mobile',
-                'lqip_data' => NULL,
-                'ratio' => 'mobile',
-                'metadatas' => '{"video": null, "altText": null, "caption": null}',
-                'locale' => 'en',
-            ),
-            5 => 
-            array (
-                'id' => 60,
-                'created_at' => '2022-07-04 22:31:09',
-                'updated_at' => '2022-07-04 22:31:09',
-                'deleted_at' => NULL,
-                'mediable_id' => 3,
-                'mediable_type' => 'A17\\Twill\\Models\\Setting',
-                'media_id' => 1,
-                'crop_x' => 0,
-                'crop_y' => 0,
-                'crop_w' => 80,
-                'crop_h' => 78,
-                'role' => 'company_favicon',
-                'crop' => 'flexible',
-                'lqip_data' => NULL,
-                'ratio' => 'free',
-                'metadatas' => '{"video": null, "altText": null, "caption": null}',
-                'locale' => 'en',
-            ),
-            6 => 
-            array (
                 'id' => 175,
                 'created_at' => '2022-07-05 01:27:45',
                 'updated_at' => '2022-07-05 01:27:45',
@@ -159,7 +39,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            7 => 
+            1 => 
             array (
                 'id' => 176,
                 'created_at' => '2022-07-05 01:27:45',
@@ -179,7 +59,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            8 => 
+            2 => 
             array (
                 'id' => 177,
                 'created_at' => '2022-07-05 01:27:45',
@@ -199,7 +79,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            9 => 
+            3 => 
             array (
                 'id' => 190,
                 'created_at' => '2022-07-05 01:29:20',
@@ -219,7 +99,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            10 => 
+            4 => 
             array (
                 'id' => 191,
                 'created_at' => '2022-07-05 01:29:20',
@@ -239,7 +119,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            11 => 
+            5 => 
             array (
                 'id' => 192,
                 'created_at' => '2022-07-05 01:29:20',
@@ -259,7 +139,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            12 => 
+            6 => 
             array (
                 'id' => 193,
                 'created_at' => '2022-07-05 01:29:20',
@@ -279,7 +159,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            13 => 
+            7 => 
             array (
                 'id' => 194,
                 'created_at' => '2022-07-05 01:29:20',
@@ -299,7 +179,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            14 => 
+            8 => 
             array (
                 'id' => 195,
                 'created_at' => '2022-07-05 01:29:20',
@@ -319,7 +199,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            15 => 
+            9 => 
             array (
                 'id' => 196,
                 'created_at' => '2022-07-05 01:29:20',
@@ -339,7 +219,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            16 => 
+            10 => 
             array (
                 'id' => 197,
                 'created_at' => '2022-07-05 01:29:20',
@@ -359,7 +239,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            17 => 
+            11 => 
             array (
                 'id' => 198,
                 'created_at' => '2022-07-05 01:29:20',
@@ -379,7 +259,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            18 => 
+            12 => 
             array (
                 'id' => 199,
                 'created_at' => '2022-07-05 01:29:20',
@@ -399,7 +279,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            19 => 
+            13 => 
             array (
                 'id' => 200,
                 'created_at' => '2022-07-05 01:29:20',
@@ -419,7 +299,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            20 => 
+            14 => 
             array (
                 'id' => 201,
                 'created_at' => '2022-07-05 01:29:20',
@@ -439,7 +319,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            21 => 
+            15 => 
             array (
                 'id' => 202,
                 'created_at' => '2022-07-05 01:29:55',
@@ -459,7 +339,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            22 => 
+            16 => 
             array (
                 'id' => 203,
                 'created_at' => '2022-07-05 01:29:55',
@@ -479,7 +359,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            23 => 
+            17 => 
             array (
                 'id' => 204,
                 'created_at' => '2022-07-05 01:29:55',
@@ -499,7 +379,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            24 => 
+            18 => 
             array (
                 'id' => 205,
                 'created_at' => '2022-07-05 01:29:55',
@@ -519,7 +399,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            25 => 
+            19 => 
             array (
                 'id' => 206,
                 'created_at' => '2022-07-05 01:29:55',
@@ -539,7 +419,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            26 => 
+            20 => 
             array (
                 'id' => 207,
                 'created_at' => '2022-07-05 01:29:55',
@@ -559,7 +439,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            27 => 
+            21 => 
             array (
                 'id' => 208,
                 'created_at' => '2022-07-05 01:29:55',
@@ -579,7 +459,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            28 => 
+            22 => 
             array (
                 'id' => 209,
                 'created_at' => '2022-07-05 01:29:55',
@@ -599,7 +479,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            29 => 
+            23 => 
             array (
                 'id' => 210,
                 'created_at' => '2022-07-05 01:29:55',
@@ -619,7 +499,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            30 => 
+            24 => 
             array (
                 'id' => 211,
                 'created_at' => '2022-07-05 01:29:55',
@@ -639,7 +519,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            31 => 
+            25 => 
             array (
                 'id' => 212,
                 'created_at' => '2022-07-05 01:29:55',
@@ -659,7 +539,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            32 => 
+            26 => 
             array (
                 'id' => 213,
                 'created_at' => '2022-07-05 01:29:55',
@@ -679,7 +559,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            33 => 
+            27 => 
             array (
                 'id' => 262,
                 'created_at' => '2022-07-05 02:29:25',
@@ -699,7 +579,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            34 => 
+            28 => 
             array (
                 'id' => 263,
                 'created_at' => '2022-07-05 02:29:25',
@@ -719,7 +599,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            35 => 
+            29 => 
             array (
                 'id' => 264,
                 'created_at' => '2022-07-05 02:29:25',
@@ -739,7 +619,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            36 => 
+            30 => 
             array (
                 'id' => 265,
                 'created_at' => '2022-07-05 02:33:28',
@@ -759,7 +639,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            37 => 
+            31 => 
             array (
                 'id' => 266,
                 'created_at' => '2022-07-05 02:33:28',
@@ -779,7 +659,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            38 => 
+            32 => 
             array (
                 'id' => 267,
                 'created_at' => '2022-07-05 02:33:28',
@@ -799,7 +679,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            39 => 
+            33 => 
             array (
                 'id' => 301,
                 'created_at' => '2022-07-05 03:54:50',
@@ -819,7 +699,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            40 => 
+            34 => 
             array (
                 'id' => 302,
                 'created_at' => '2022-07-05 03:54:50',
@@ -839,7 +719,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            41 => 
+            35 => 
             array (
                 'id' => 303,
                 'created_at' => '2022-07-05 03:54:50',
@@ -859,7 +739,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            42 => 
+            36 => 
             array (
                 'id' => 304,
                 'created_at' => '2022-07-05 03:54:50',
@@ -879,7 +759,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            43 => 
+            37 => 
             array (
                 'id' => 305,
                 'created_at' => '2022-07-05 03:54:50',
@@ -899,7 +779,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            44 => 
+            38 => 
             array (
                 'id' => 306,
                 'created_at' => '2022-07-05 03:54:50',
@@ -919,7 +799,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            45 => 
+            39 => 
             array (
                 'id' => 307,
                 'created_at' => '2022-07-05 03:54:50',
@@ -939,7 +819,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            46 => 
+            40 => 
             array (
                 'id' => 308,
                 'created_at' => '2022-07-05 03:54:50',
@@ -959,7 +839,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            47 => 
+            41 => 
             array (
                 'id' => 309,
                 'created_at' => '2022-07-05 03:54:50',
@@ -979,7 +859,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            48 => 
+            42 => 
             array (
                 'id' => 310,
                 'created_at' => '2022-07-05 03:54:50',
@@ -999,7 +879,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            49 => 
+            43 => 
             array (
                 'id' => 311,
                 'created_at' => '2022-07-05 03:54:50',
@@ -1019,7 +899,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            50 => 
+            44 => 
             array (
                 'id' => 312,
                 'created_at' => '2022-07-05 03:54:50',
@@ -1039,7 +919,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            51 => 
+            45 => 
             array (
                 'id' => 313,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1059,7 +939,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            52 => 
+            46 => 
             array (
                 'id' => 314,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1079,7 +959,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            53 => 
+            47 => 
             array (
                 'id' => 315,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1099,7 +979,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            54 => 
+            48 => 
             array (
                 'id' => 316,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1119,7 +999,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            55 => 
+            49 => 
             array (
                 'id' => 317,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1139,7 +1019,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            56 => 
+            50 => 
             array (
                 'id' => 318,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1159,7 +1039,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            57 => 
+            51 => 
             array (
                 'id' => 319,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1179,7 +1059,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            58 => 
+            52 => 
             array (
                 'id' => 320,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1199,7 +1079,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            59 => 
+            53 => 
             array (
                 'id' => 321,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1219,7 +1099,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            60 => 
+            54 => 
             array (
                 'id' => 322,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1239,7 +1119,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            61 => 
+            55 => 
             array (
                 'id' => 323,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1259,7 +1139,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            62 => 
+            56 => 
             array (
                 'id' => 324,
                 'created_at' => '2022-07-05 03:54:59',
@@ -1279,7 +1159,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            63 => 
+            57 => 
             array (
                 'id' => 499,
                 'created_at' => '2022-07-05 07:06:24',
@@ -1299,7 +1179,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            64 => 
+            58 => 
             array (
                 'id' => 500,
                 'created_at' => '2022-07-05 07:06:24',
@@ -1319,7 +1199,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            65 => 
+            59 => 
             array (
                 'id' => 501,
                 'created_at' => '2022-07-05 07:06:24',
@@ -1339,7 +1219,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            66 => 
+            60 => 
             array (
                 'id' => 514,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1359,7 +1239,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            67 => 
+            61 => 
             array (
                 'id' => 515,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1379,7 +1259,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            68 => 
+            62 => 
             array (
                 'id' => 516,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1399,7 +1279,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            69 => 
+            63 => 
             array (
                 'id' => 517,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1419,7 +1299,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            70 => 
+            64 => 
             array (
                 'id' => 518,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1439,7 +1319,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            71 => 
+            65 => 
             array (
                 'id' => 519,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1459,7 +1339,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            72 => 
+            66 => 
             array (
                 'id' => 520,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1479,7 +1359,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            73 => 
+            67 => 
             array (
                 'id' => 521,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1499,7 +1379,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            74 => 
+            68 => 
             array (
                 'id' => 522,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1519,7 +1399,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            75 => 
+            69 => 
             array (
                 'id' => 523,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1539,7 +1419,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            76 => 
+            70 => 
             array (
                 'id' => 524,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1559,7 +1439,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            77 => 
+            71 => 
             array (
                 'id' => 525,
                 'created_at' => '2022-07-05 22:29:40',
@@ -1579,7 +1459,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            78 => 
+            72 => 
             array (
                 'id' => 532,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1599,7 +1479,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            79 => 
+            73 => 
             array (
                 'id' => 533,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1619,7 +1499,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            80 => 
+            74 => 
             array (
                 'id' => 534,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1639,7 +1519,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            81 => 
+            75 => 
             array (
                 'id' => 535,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1659,7 +1539,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            82 => 
+            76 => 
             array (
                 'id' => 536,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1679,7 +1559,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            83 => 
+            77 => 
             array (
                 'id' => 537,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1699,7 +1579,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            84 => 
+            78 => 
             array (
                 'id' => 538,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1719,7 +1599,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            85 => 
+            79 => 
             array (
                 'id' => 539,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1739,7 +1619,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            86 => 
+            80 => 
             array (
                 'id' => 540,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1759,7 +1639,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            87 => 
+            81 => 
             array (
                 'id' => 541,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1779,7 +1659,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            88 => 
+            82 => 
             array (
                 'id' => 542,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1799,7 +1679,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            89 => 
+            83 => 
             array (
                 'id' => 543,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1819,7 +1699,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            90 => 
+            84 => 
             array (
                 'id' => 544,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1839,7 +1719,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            91 => 
+            85 => 
             array (
                 'id' => 545,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1859,7 +1739,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            92 => 
+            86 => 
             array (
                 'id' => 546,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1879,7 +1759,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            93 => 
+            87 => 
             array (
                 'id' => 547,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1899,7 +1779,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            94 => 
+            88 => 
             array (
                 'id' => 548,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1919,7 +1799,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            95 => 
+            89 => 
             array (
                 'id' => 549,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1939,7 +1819,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            96 => 
+            90 => 
             array (
                 'id' => 550,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1959,7 +1839,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            97 => 
+            91 => 
             array (
                 'id' => 551,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1979,7 +1859,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            98 => 
+            92 => 
             array (
                 'id' => 552,
                 'created_at' => '2022-07-06 00:58:28',
@@ -1999,7 +1879,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            99 => 
+            93 => 
             array (
                 'id' => 553,
                 'created_at' => '2022-07-06 00:58:28',
@@ -2019,7 +1899,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            100 => 
+            94 => 
             array (
                 'id' => 554,
                 'created_at' => '2022-07-06 00:58:28',
@@ -2039,7 +1919,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            101 => 
+            95 => 
             array (
                 'id' => 555,
                 'created_at' => '2022-07-06 00:58:28',
@@ -2059,7 +1939,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            102 => 
+            96 => 
             array (
                 'id' => 556,
                 'created_at' => '2022-07-06 01:04:50',
@@ -2079,7 +1959,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            103 => 
+            97 => 
             array (
                 'id' => 557,
                 'created_at' => '2022-07-06 01:04:50',
@@ -2099,7 +1979,7 @@ class MediablesTableSeeder extends Seeder
                 'metadatas' => '{"video": null, "altText": null, "caption": null}',
                 'locale' => 'en',
             ),
-            104 => 
+            98 => 
             array (
                 'id' => 558,
                 'created_at' => '2022-07-06 01:04:50',
@@ -2113,6 +1993,186 @@ class MediablesTableSeeder extends Seeder
                 'crop_w' => 3456,
                 'crop_h' => 2304,
                 'role' => 'image_a',
+                'crop' => 'flexible',
+                'lqip_data' => NULL,
+                'ratio' => 'free',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            99 => 
+            array (
+                'id' => 559,
+                'created_at' => '2022-07-07 22:40:22',
+                'updated_at' => '2022-07-07 22:40:22',
+                'deleted_at' => NULL,
+                'mediable_id' => 1,
+                'mediable_type' => 'App\\Models\\PageContact',
+                'media_id' => 26,
+                'crop_x' => 14,
+                'crop_y' => 0,
+                'crop_w' => 819,
+                'crop_h' => 462,
+                'role' => 'image_a',
+                'crop' => 'default',
+                'lqip_data' => NULL,
+                'ratio' => 'default',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            100 => 
+            array (
+                'id' => 560,
+                'created_at' => '2022-07-07 22:40:22',
+                'updated_at' => '2022-07-07 22:40:22',
+                'deleted_at' => NULL,
+                'mediable_id' => 1,
+                'mediable_type' => 'App\\Models\\PageContact',
+                'media_id' => 26,
+                'crop_x' => 158,
+                'crop_y' => 0,
+                'crop_w' => 462,
+                'crop_h' => 462,
+                'role' => 'image_a',
+                'crop' => 'mobile',
+                'lqip_data' => NULL,
+                'ratio' => 'mobile',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            101 => 
+            array (
+                'id' => 561,
+                'created_at' => '2022-07-07 22:40:22',
+                'updated_at' => '2022-07-07 22:40:22',
+                'deleted_at' => NULL,
+                'mediable_id' => 1,
+                'mediable_type' => 'App\\Models\\PageContact',
+                'media_id' => 26,
+                'crop_x' => 0,
+                'crop_y' => 0,
+                'crop_w' => 914,
+                'crop_h' => 462,
+                'role' => 'image_a',
+                'crop' => 'flexible',
+                'lqip_data' => NULL,
+                'ratio' => 'free',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            102 => 
+            array (
+                'id' => 574,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'mediable_id' => 2,
+                'mediable_type' => 'A17\\Twill\\Models\\Setting',
+                'media_id' => 2,
+                'crop_x' => 0,
+                'crop_y' => 0,
+                'crop_w' => 691,
+                'crop_h' => 390,
+                'role' => 'company_logo',
+                'crop' => 'default',
+                'lqip_data' => NULL,
+                'ratio' => 'default',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            103 => 
+            array (
+                'id' => 575,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'mediable_id' => 2,
+                'mediable_type' => 'A17\\Twill\\Models\\Setting',
+                'media_id' => 2,
+                'crop_x' => 60,
+                'crop_y' => 0,
+                'crop_w' => 390,
+                'crop_h' => 390,
+                'role' => 'company_logo',
+                'crop' => 'mobile',
+                'lqip_data' => NULL,
+                'ratio' => 'mobile',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            104 => 
+            array (
+                'id' => 576,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'mediable_id' => 2,
+                'mediable_type' => 'A17\\Twill\\Models\\Setting',
+                'media_id' => 2,
+                'crop_x' => 0,
+                'crop_y' => 0,
+                'crop_w' => 1428,
+                'crop_h' => 390,
+                'role' => 'company_logo',
+                'crop' => 'flexible',
+                'lqip_data' => NULL,
+                'ratio' => 'free',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            105 => 
+            array (
+                'id' => 577,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'mediable_id' => 3,
+                'mediable_type' => 'A17\\Twill\\Models\\Setting',
+                'media_id' => 1,
+                'crop_x' => 0,
+                'crop_y' => 32,
+                'crop_w' => 80,
+                'crop_h' => 45,
+                'role' => 'company_favicon',
+                'crop' => 'default',
+                'lqip_data' => NULL,
+                'ratio' => 'default',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            106 => 
+            array (
+                'id' => 578,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'mediable_id' => 3,
+                'mediable_type' => 'A17\\Twill\\Models\\Setting',
+                'media_id' => 1,
+                'crop_x' => 0,
+                'crop_y' => 0,
+                'crop_w' => 78,
+                'crop_h' => 78,
+                'role' => 'company_favicon',
+                'crop' => 'mobile',
+                'lqip_data' => NULL,
+                'ratio' => 'mobile',
+                'metadatas' => '{"video": null, "altText": null, "caption": null}',
+                'locale' => 'en',
+            ),
+            107 => 
+            array (
+                'id' => 579,
+                'created_at' => '2022-07-07 23:10:16',
+                'updated_at' => '2022-07-07 23:10:16',
+                'deleted_at' => NULL,
+                'mediable_id' => 3,
+                'mediable_type' => 'A17\\Twill\\Models\\Setting',
+                'media_id' => 1,
+                'crop_x' => 0,
+                'crop_y' => 0,
+                'crop_w' => 80,
+                'crop_h' => 78,
+                'role' => 'company_favicon',
                 'crop' => 'flexible',
                 'lqip_data' => NULL,
                 'ratio' => 'free',
