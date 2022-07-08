@@ -24,7 +24,7 @@ class PageHomesTableSeeder extends Seeder
                 'id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-01 03:48:32',
-                'updated_at' => '2022-07-05 07:06:24',
+                'updated_at' => '2022-07-08 03:44:04',
                 'published' => 1,
                 'title' => 'Home',
                 'description' => NULL,

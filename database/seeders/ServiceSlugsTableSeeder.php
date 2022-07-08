@@ -25,10 +25,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-05 02:29:25',
+                'updated_at' => '2022-07-08 03:36:13',
                 'slug' => 'residential',
                 'locale' => 'en',
-                'active' => 0,
+                'active' => 1,
             ),
             1 => 
             array (
@@ -36,10 +36,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 2,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-05 02:33:28',
+                'updated_at' => '2022-07-08 03:37:10',
                 'slug' => 'commercial',
                 'locale' => 'en',
-                'active' => 0,
+                'active' => 1,
             ),
             2 => 
             array (
@@ -47,10 +47,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 3,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-05 01:27:45',
+                'updated_at' => '2022-07-08 03:37:55',
                 'slug' => 'subdivision',
                 'locale' => 'en',
-                'active' => 0,
+                'active' => 1,
             ),
             3 => 
             array (
@@ -58,10 +58,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 4,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-06 02:00:50',
+                'updated_at' => '2022-07-08 03:38:06',
                 'slug' => 'project-management',
                 'locale' => 'en',
-                'active' => 0,
+                'active' => 1,
             ),
             4 => 
             array (
@@ -69,10 +69,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-05 02:29:25',
+                'updated_at' => '2022-07-08 03:36:13',
                 'slug' => 'service-a',
                 'locale' => 'en',
-                'active' => 1,
+                'active' => 0,
             ),
             5 => 
             array (
@@ -80,10 +80,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 2,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-05 02:33:28',
+                'updated_at' => '2022-07-08 03:37:10',
                 'slug' => 'service-b',
                 'locale' => 'en',
-                'active' => 1,
+                'active' => 0,
             ),
             6 => 
             array (
@@ -91,10 +91,10 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 3,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-05 01:27:45',
+                'updated_at' => '2022-07-08 03:37:55',
                 'slug' => 'service-c',
                 'locale' => 'en',
-                'active' => 1,
+                'active' => 0,
             ),
             7 => 
             array (
@@ -102,18 +102,18 @@ class ServiceSlugsTableSeeder extends Seeder
                 'service_id' => 4,
                 'deleted_at' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2022-07-06 02:00:50',
+                'updated_at' => '2022-07-08 03:38:06',
                 'slug' => 'service-d',
                 'locale' => 'en',
-                'active' => 1,
+                'active' => 0,
             ),
             8 => 
             array (
                 'id' => 9,
                 'service_id' => 5,
-                'deleted_at' => NULL,
+                'deleted_at' => '2022-07-08 03:35:02',
                 'created_at' => NULL,
-                'updated_at' => '2022-07-06 01:39:03',
+                'updated_at' => '2022-07-08 03:35:02',
                 'slug' => 'service-e',
                 'locale' => 'en',
                 'active' => 1,
