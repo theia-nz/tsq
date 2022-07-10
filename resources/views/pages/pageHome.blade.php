@@ -19,7 +19,7 @@
 			<div class="swiper-slide flex justify-center">
 				<div class="relative group">
 					<div class="absolute inset-0 bg-white bg-opacity-0 transition-all group-hover:bg-opacity-50"></div>
-					<img class="object-contain object-center w-full h-[45vh] lg:h-[65vh]"
+					<img class="object-contain object-center w-full h-[30vh] lg:h-[60vh]"
 						src="{{ $project->image('featured_image') }}" alt="">
 					<a class="absolute inset-0" href="{{ route('project', $project->getSlug()) }}"></a>
 				</div>
