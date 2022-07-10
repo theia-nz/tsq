@@ -5,7 +5,7 @@
 @section('content')
 @if($repo->getRelated('services')->count())
 <div class="container mx-auto px-4">
-	<div class="grid grid-cols-12 gap-y-[40px] lg:gap-x-[40px] lg:min-h-[80vh]">
+	<div class="grid grid-cols-12 gap-y-[20px] lg:gap-y-[40px] lg:gap-x-[40px] lg:min-h-[80vh]">
 		@foreach ($repo->getRelated('services')->where('published', 1) as $service)
 		@if($loop->iteration === 4)
 		<div class="col-span-12 lg:col-span-3 flex flex-col items-center lg:items-end justify-end">

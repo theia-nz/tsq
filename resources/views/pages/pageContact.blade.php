@@ -5,7 +5,7 @@
 @section('content')
 <div class="relative">
 	<div class="container mx-auto px-4">
-		<div class="grid grid-cols-12 gap-y-[40px] lg:gap-y-0 lg:min-h-[80vh]">
+		<div class="grid grid-cols-12 gap-y-[20px] lg:gap-y-0 lg:min-h-[80vh]">
 			<div class="col-span-12 lg:col-span-6 flex flex-col justify-end">
 				<div class="grid grid-cols-12">
 					<div class="col-span-12 lg:col-span-6">
