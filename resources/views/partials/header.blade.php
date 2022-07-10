@@ -1,5 +1,5 @@
 <header class="relative z-40" x-data="{ sideMenu: false }">
-	<div class="container mx-auto px-4 py-[15px] flex items-center justify-between">
+	<div class="container mx-auto px-4 pt-[15px] pb-[15px] lg:pb-[30px] flex items-center justify-between">
 		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
 			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
