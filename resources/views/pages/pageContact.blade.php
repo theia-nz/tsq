@@ -65,7 +65,7 @@
 					</div>
 				</div>
 				<div
-					class="font-primary font-extralight uppercase text-[36px] text-primary-grey order-first lg:order-none mb-[40px] lg:mb-0">
+					class="font-primary font-extralight uppercase text-[36px] text-primary-grey order-first lg:order-none mb-[20px] lg:mb-0">
 					{{ $repo->title }}
 				</div>
 			</div>
