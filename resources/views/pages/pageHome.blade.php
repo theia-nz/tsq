@@ -28,7 +28,7 @@
 		</div>
 	</div>
 	<div class="flex items-center justify-between my-[15px]">
-		<div class="inline-flex gap-x-[60px]">
+		<div class="inline-flex gap-[30px] lg:gap-x-[60px]">
 			<div class="swiper-button-prev-pagehome">
 				<img class="cursor-pointer"
 					src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">

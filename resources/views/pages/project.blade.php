@@ -15,7 +15,7 @@
 		</div>
 	</div>
 	<div class="flex items-center justify-between my-[15px]">
-		<div class="inline-flex flex-wrap  gap-x-[60px]">
+		<div class="inline-flex gap-[30px] lg:gap-x-[60px] flex-wrap">
 			<div class="relative flex items-center gap-x-[15px]">
 				<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
 				@if($prevRepo)
