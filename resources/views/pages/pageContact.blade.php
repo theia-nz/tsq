@@ -73,7 +73,7 @@
 				<div class="lg:absolute lg:w-[100vw] lg:left-0">
 					<img class="lg:absolute lg:right-0 lg:max-w-[45vw]" src="{{ $repo->image('image_a') }}" alt="">
 				</div>
-				<div class="self-end">
+				<div class="self-end mb-[30px] lg:mb-0">
 					<div class="flex items-center justify-end gap-x-[15px] mb-[5px]">
 						<div class="relative">
 							<img src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}" alt="">
