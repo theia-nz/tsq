@@ -1,4 +1,4 @@
-<div>
+<div class="relative">
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 gap-y-[30px] lg:gap-y-[60px]">
             @foreach($projects as $project)
@@ -16,7 +16,7 @@
         </div>
     </div>
     @if($can_load_more)
-    <div class="h-[80px]" x-data="" x-intersect.margin.50vh="$wire.call('loadMore')">
+    <div class="absolute bottom-0 w-full h-[75vh]" x-data="" x-intersect="$wire.call('loadMore')">
     </div>
     @else
     <div class="h-[80px]">
