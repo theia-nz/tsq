@@ -1,9 +1,12 @@
-<header class="relative z-40" x-data="{ sideMenu: false }">
-	<div class="container mx-auto px-4 pt-[15px] pb-[15px] lg:pb-[30px] flex items-center justify-between">
+<header
+	class="@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home' || \Illuminate\Support\Facades\Route::currentRouteName() === 'project') bg-white bg-opacity-95 w-full fixed top-0 @else relative @endif z-40"
+	x-data="{ sideMenu: false }">
+	<div
+		class="container mx-auto px-4 @if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home') py-[5px] @else pt-[15px] pb-[15px] lg:pb-[30px] @endif flex items-center justify-between">
 		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
-			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
-				alt="">
+			<img class="@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home') max-h-[40px] @else max-h-[80px] @endif"
+				src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}" alt="">
 		</div>
 		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_bars')->first()->image('icon_bars') }}" alt=""
 			x-on:click.stop="sideMenu = true">

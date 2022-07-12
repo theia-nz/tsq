@@ -23,22 +23,23 @@
 			@endforeach
 		</div>
 	</div>
-	<div class="absolute z-10 bottom-0 w-full h-[40px] bg-tertiary-grey bg-opacity-80">
-		<div class="container mx-auto px-4 flex items-center justify-between">
-			<div class="inline-flex gap-[30px] lg:gap-x-[60px]">
-				<div class="swiper-button-prev-pagehome">
-					<img class="cursor-pointer"
-						src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
-				</div>
-				<div class="swiper-button-next-pagehome">
-					<img class="cursor-pointer"
-						src="{{ $setting->where('key', 'icon_angle_right')->first()->image('icon_angle_right') }}"
-						alt="">
-				</div>
-			</div>
-			<div class="inline-flex items-center gap-x-[15px]">
+	<div class="absolute z-10 left-0 top-1/2 -translate-y-1/2">
+		<div
+			class="swiper-button-prev-pagehome flex items-center justify-center w-[64px] h-[64px] bg-white bg-opacity-95 cursor-pointer">
+			<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
+		</div>
+	</div>
+	<div class="absolute z-10 right-0 top-1/2 -translate-y-1/2">
+		<div
+			class="swiper-button-next-pagehome flex items-center justify-center w-[64px] h-[64px] bg-white bg-opacity-95 cursor-pointer">
+			<img src="{{ $setting->where('key', 'icon_angle_right')->first()->image('icon_angle_right') }}" alt="">
+		</div>
+	</div>
+	<div class="absolute z-10 bottom-0 w-full">
+		<div class="flex items-center justify-end">
+			<div class="inline-flex items-center gap-x-[15px] px-[30px]">
 				<div class="swiper-pagination swiper-pagination-pagehome"></div>
-				<div id="swiper-index-pagehome" class="font-primary font-light text-[24px] text-primary-grey"></div>
+				<div id="swiper-index-pagehome" class="font-primary font-medium text-[48px] text-white"></div>
 			</div>
 		</div>
 	</div>

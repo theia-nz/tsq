@@ -14,12 +14,7 @@
 </head>
 
 <body class="@if(config('app.debug')) debug-screens @endif">
-    @if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home')
-    @include('partials.headerHome')
-    @else
     @include('partials.header')
-    @endif
-
     @yield('content')
     @include('partials.footer')
     <script src="{{ mix('js/alpine.js') }}" defer></script>

@@ -14,8 +14,8 @@ module.exports = {
             md: defaultTheme.screens.md,
             lg: defaultTheme.screens.lg,
             xl: defaultTheme.screens.xl,
-            "2xl": "1800px",
-            "3xl": "2440px",
+            "2xl": "1860px",
+            "3xl": "2500px",
         },
         extend: {
             fontFamily: {
