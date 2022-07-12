@@ -10,11 +10,8 @@ module.exports = {
     content: ["./resources/**/*.blade.php", "./resources/**/*.{scss,js,vue}"],
     theme: {
         screens: {
-            sm: defaultTheme.screens.sm,
-            md: defaultTheme.screens.md,
-            lg: defaultTheme.screens.lg,
-            xl: defaultTheme.screens.xl,
-            "2xl": defaultTheme.screens["2xl"],
+            ...defaultTheme.screens,
+            "3xl": "2320px",
         },
         extend: {
             fontFamily: {
