@@ -823,14 +823,14 @@ select{
     max-width: 1280px;
   }
 }
-@media (min-width: 1536px){
+@media (min-width: 1800px){
   .container{
-    max-width: 1536px;
+    max-width: 1800px;
   }
 }
-@media (min-width: 2320px){
+@media (min-width: 2440px){
   .container{
-    max-width: 2320px;
+    max-width: 2440px;
   }
 }
 .debug-screens::before{
@@ -867,12 +867,12 @@ select{
     content: 'screen: xl';
   }
 }
-@media (min-width: 1536px){
+@media (min-width: 1800px){
   .debug-screens::before{
     content: 'screen: 2xl';
   }
 }
-@media (min-width: 2320px){
+@media (min-width: 2440px){
   .debug-screens::before{
     content: 'screen: 3xl';
   }
@@ -926,10 +926,6 @@ select{
 .my-\[15px\]{
   margin-top: 15px;
   margin-bottom: 15px;
-}
-.my-\[30px\]{
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 .ml-1{
   margin-left: 0.25rem;

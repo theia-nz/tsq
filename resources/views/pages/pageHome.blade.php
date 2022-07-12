@@ -45,23 +45,6 @@
 	</div>
 </div>
 @endif
-<div class="container mx-auto px-4 my-[30px] flex items-center gap-x-[15px]">
-	<div class="relative">
-		<img src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}" alt="">
-		<a class="absolute inset-0" href="tel:{{ $setting->where('key', 'new_zealand_branch_phone')->first()->value }}"
-			target="_blank"></a>
-	</div>
-	<div class="relative">
-		<img src="{{ $setting->where('key', 'icon_envelope')->first()->image('icon_envelope') }}" alt="">
-		<a class="absolute inset-0"
-			href="mailto:{{ $setting->where('key', 'new_zealand_branch_email')->first()->value }}" target="_blank"></a>
-	</div>
-	<div class="relative">
-		<img src="{{ $setting->where('key', 'icon_facebook')->first()->image('icon_facebook') }}" alt="">
-		<a class="absolute inset-0" href="{{ $setting->where('key', 'company_facebook')->first()->value }}"
-			target="_blank"></a>
-	</div>
-</div>
 @endsection
 
 @push('scripts')
