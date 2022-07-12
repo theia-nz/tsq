@@ -29,7 +29,7 @@ class PageController extends Controller
             $view->with('setting', $this->setting);
         }
 
-        if ($view->getName() === 'partials.header') {
+        if (($view->getName() === 'partials.header') || ($view->getName() === 'partials.headerHome')) {
             $view->with('setting', $this->setting);
             $view->with('menu', $this->menu);
         }
