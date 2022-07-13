@@ -29,47 +29,43 @@ class ServicesTableSeeder extends Seeder
                 'title' => 'Residential',
                 'description' => NULL,
                 'position' => 1,
+                'items' => NULL,
             ),
             1 => 
             array (
                 'id' => 2,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:46:58',
-                'updated_at' => '2022-07-11 04:40:38',
+                'updated_at' => '2022-07-13 07:41:02',
                 'published' => 1,
                 'title' => 'Commercial',
                 'description' => NULL,
                 'position' => 2,
+                'items' => NULL,
             ),
             2 => 
             array (
                 'id' => 3,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:47:04',
-                'updated_at' => '2022-07-11 04:40:59',
+                'updated_at' => '2022-07-13 07:41:46',
                 'published' => 1,
                 'title' => 'Subdivision',
                 'description' => NULL,
                 'position' => 3,
+                'items' => NULL,
             ),
             3 => 
             array (
                 'id' => 4,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:47:13',
-                'updated_at' => '2022-07-08 03:38:06',
+                'updated_at' => '2022-07-13 07:31:53',
                 'published' => 1,
                 'title' => 'Project Management',
-                'description' => 'Concept Design
-
-Resource Consent Prepare and Application
-
-Building Consent Prepare and Application
-
-Cooperation with Consultants
-
-Cooperation with Construction Works',
+                'description' => NULL,
                 'position' => 4,
+                'items' => '[{"id": 1657697486850, "name": "Concept Design", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697487490, "name": "Resource Consent Prepare and Application", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697487897, "name": "Building Consent Prepare and Application", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697488291, "name": "Cooperation with Consultants", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697488705, "name": "Cooperation with Construction Works", "blocks": [], "medias": [], "browsers": []}]',
             ),
             4 => 
             array (
@@ -81,6 +77,7 @@ Cooperation with Construction Works',
                 'title' => 'Service E',
                 'description' => NULL,
                 'position' => 5,
+                'items' => NULL,
             ),
         ));
         

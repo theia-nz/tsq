@@ -3217,6 +3217,32 @@ class MediasTableSeeder extends Seeder
                 'caption' => NULL,
                 'filename' => '4_web.jpg',
             ),
+            246 => 
+            array (
+                'id' => 247,
+                'created_at' => '2022-07-13 11:02:28',
+                'updated_at' => '2022-07-13 11:03:50',
+                'deleted_at' => '2022-07-13 11:03:50',
+                'uuid' => 'bd001ecd-1640-4222-8d05-301fd27806f6/icon-angle-down.png',
+                'alt_text' => 'Icon Angle Down',
+                'width' => 18,
+                'height' => 9,
+                'caption' => NULL,
+                'filename' => 'icon-angle-down.png',
+            ),
+            247 => 
+            array (
+                'id' => 248,
+                'created_at' => '2022-07-13 11:03:56',
+                'updated_at' => '2022-07-13 11:03:56',
+                'deleted_at' => NULL,
+                'uuid' => '470f0487-0b4b-4c5a-8312-59dc803eae19/icon-angle-down.png',
+                'alt_text' => 'Icon Angle Down',
+                'width' => 18,
+                'height' => 9,
+                'caption' => NULL,
+                'filename' => 'icon-angle-down.png',
+            ),
         ));
         
         

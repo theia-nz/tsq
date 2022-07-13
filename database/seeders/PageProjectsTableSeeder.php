@@ -24,10 +24,11 @@ class PageProjectsTableSeeder extends Seeder
                 'id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 02:01:53',
-                'updated_at' => '2022-07-05 02:23:09',
+                'updated_at' => '2022-07-13 10:51:07',
                 'published' => 1,
                 'title' => 'Projects',
                 'description' => NULL,
+                'header_a' => 'More Projects',
             ),
         ));
         

@@ -24,8 +24,8 @@ class FormContactsTableSeeder extends Seeder
                 'id' => 1,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-07 22:30:28',
-                'updated_at' => '2022-07-07 23:30:27',
-                'published' => 0,
+                'updated_at' => '2022-07-13 08:34:30',
+                'published' => 1,
                 'title' => 'Contact Form',
                 'description' => NULL,
                 'form_title' => 'Quick Enquiry',
@@ -42,7 +42,7 @@ class FormContactsTableSeeder extends Seeder
                 'label_submit' => 'Send',
                 'message_success' => 'We will get back to you as soon as possible',
                 'message_failure' => 'Something went wrong, please refresh the page and try again',
-                'recipients' => '[{"id": 1657236621511, "name": {"en": "Kevin Lim"}, "email": {"en": "kevin@theia.co.nz"}, "blocks": [], "medias": [], "browsers": []}]',
+                'recipients' => '[{"id": 1657236621511, "name": "Admin", "email": "admin@tsq.co.nz", "blocks": [], "medias": [], "browsers": []}]',
             ),
         ));
         
