@@ -79,31 +79,8 @@
 			</div>
 		</div>
 		<div class="col-span-12 lg:col-span-6 flex items-end justify-end">
-			<div>
-				<div class="flex items-center justify-end gap-x-[15px] mb-[5px]">
-					<div class="relative">
-						<img src="{{ $setting->where('key', 'icon_phone')->first()->image('icon_phone') }}" alt="">
-						<a class="absolute inset-0"
-							href="tel:{{ $setting->where('key', 'new_zealand_branch_phone')->first()->value }}"
-							target="_blank"></a>
-					</div>
-					<div class="relative">
-						<img src="{{ $setting->where('key', 'icon_envelope')->first()->image('icon_envelope') }}"
-							alt="">
-						<a class="absolute inset-0"
-							href="mailto:{{ $setting->where('key', 'new_zealand_branch_email')->first()->value }}"
-							target="_blank"></a>
-					</div>
-					<div class="relative">
-						<img src="{{ $setting->where('key', 'icon_facebook')->first()->image('icon_facebook') }}"
-							alt="">
-						<a class="absolute inset-0"
-							href="{{ $setting->where('key', 'company_facebook')->first()->value }}" target="_blank"></a>
-					</div>
-				</div>
-				<div class="font-primary font-light tracking-wider text-right text-[16px] text-tertiary-grey">
-					{!! $setting->byKey('company_copyright') !!}
-				</div>
+			<div class="font-primary font-light tracking-wider text-right text-[16px] text-tertiary-grey">
+				{!! $setting->byKey('company_copyright') !!}
 			</div>
 		</div>
 	</div>
