@@ -37,7 +37,7 @@
                     <div class="col-start-9 lg:col-start-5 col-span-4 flex items-end justify-end lg:justify-center">
                         @if($can_load_more)
                         <div
-                            class="flex items-center justify-center gap-x-[15px] bg-white bg-opacity-50 py-[10px] px-[15px] shadow shadow-primary-grey-50">
+                            class="flex items-center justify-center gap-x-[15px] bg-white bg-opacity-50 py-[10px] px-[10px] lg:px-[15px]">
                             <div
                                 class="font-primary font-extralight uppercase text-center text-[21px] text-primary-grey">
                                 {{ $repo->header_a }}

@@ -1483,6 +1483,10 @@ select{
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.px-\[10px\]{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .pt-8{
   padding-top: 2rem;
 }
@@ -2028,6 +2032,10 @@ body {
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .lg\:px-\[15px\]{
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .lg\:pb-\[30px\]{
     padding-bottom: 30px;

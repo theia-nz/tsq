@@ -24,13 +24,13 @@
 	</div>
 	<div class="absolute z-10 left-0 top-1/2 -translate-y-1/2">
 		<div
-			class="swiper-button-prev-pagehome flex items-center justify-center w-[64px] h-[64px] bg-white bg-opacity-95 shadow shadow-primary-grey-50 cursor-pointer">
+			class="swiper-button-prev-pagehome flex items-center justify-center w-[64px] h-[64px] bg-white bg-opacity-95 cursor-pointer">
 			<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
 		</div>
 	</div>
 	<div class="absolute z-10 right-0 top-1/2 -translate-y-1/2">
 		<div
-			class="swiper-button-next-pagehome flex items-center justify-center w-[64px] h-[64px] bg-white bg-opacity-95 shadow shadow-primary-grey-50 cursor-pointer">
+			class="swiper-button-next-pagehome flex items-center justify-center w-[64px] h-[64px] bg-white bg-opacity-95 cursor-pointer">
 			<img src="{{ $setting->where('key', 'icon_angle_right')->first()->image('icon_angle_right') }}" alt="">
 		</div>
 	</div>
