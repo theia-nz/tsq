@@ -32,7 +32,7 @@
 						<div
 							class="relative font-primary font-light tracking-wider text-[16px] text-primary-grey transition-all hover:text-tertiary-grey">
 							<a class="absolute inset-0"
-								href="tel:{{ $setting->byKey('new_zealand_branch_email') }}"></a>
+								href="mailto:{{ $setting->byKey('new_zealand_branch_email') }}"></a>
 							{{ $setting->byKey('new_zealand_branch_email') }}
 						</div>
 						@endif
@@ -58,7 +58,7 @@
 						@if($setting->byKey('china_branch_email'))
 						<div
 							class="relative font-primary font-light tracking-wider text-[16px] text-primary-grey transition-all hover:text-tertiary-grey">
-							<a class="absolute inset-0" href="tel:{{ $setting->byKey('china_branch_email') }}"></a>
+							<a class="absolute inset-0" href="mailto:{{ $setting->byKey('china_branch_email') }}"></a>
 							{{ $setting->byKey('china_branch_email') }}
 						</div>
 						@endif

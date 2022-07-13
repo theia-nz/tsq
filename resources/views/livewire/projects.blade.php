@@ -19,7 +19,8 @@
         </div>
     </div>
     @if($can_load_more)
-    <div class="absolute z-[-1] bottom-0 w-full h-[75vh]" x-data="" x-intersect="$wire.call('loadMore')">
+    <div class="absolute z-[-1] bottom-0 w-full h-[75vh]" x-data="" x-intersect="$wire.call('loadMore')"
+        x-on:scroll.window="$nextTick(() => { if((window.innerHeight + window.scrollY) >= document.body.scrollHeight) { $wire.call('loadMore') } });">
     </div>
     @else
     <div class="h-[30px]">
