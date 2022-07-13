@@ -16,7 +16,7 @@
 						@if($setting->byKey('new_zealand_branch_address'))
 						<div x-data
 							class="font-primary font-light tracking-wider text-[16px] text-primary-grey self-start cursor-pointer transition-all hover:text-tertiary-grey"
-							x-on:click="$nextTick(() => { reloadMap({{ $setting->byKey('new_zealand_branch_latitude') }}, {{ $setting->byKey('new_zealand_branch_longitude') }}) });">
+							x-on:click="$nextTick(() => { reloadMap({{ $setting->byKey('new_zealand_branch_latitude') }}, {{ $setting->byKey('new_zealand_branch_longitude') }}); document.getElementById('map').scrollIntoView() });">
 							{!! nl2br($setting->byKey('new_zealand_branch_address')) !!}
 						</div>
 						@endif
@@ -44,7 +44,7 @@
 						@if($setting->byKey('china_branch_address'))
 						<div x-data
 							class="font-primary font-light tracking-wider text-[16px] text-primary-grey self-start cursor-pointer transition-all hover:text-tertiary-grey"
-							x-on:click="$nextTick(() => { reloadMap({{ $setting->byKey('china_branch_latitude') }}, {{ $setting->byKey('china_branch_longitude') }}) });">
+							x-on:click="$nextTick(() => { reloadMap({{ $setting->byKey('china_branch_latitude') }}, {{ $setting->byKey('china_branch_longitude') }}); document.getElementById('map').scrollIntoView(); });">
 							{!! nl2br($setting->byKey('china_branch_address')) !!}
 						</div>
 						@endif
