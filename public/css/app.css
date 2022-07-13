@@ -913,6 +913,12 @@ select{
 .top-\[-45px\]{
   top: -45px;
 }
+.bottom-\[0px\]{
+  bottom: 0px;
+}
+.bottom-\[80px\]{
+  bottom: 80px;
+}
 .z-50{
   z-index: 50;
 }
@@ -930,6 +936,9 @@ select{
 }
 .col-span-1{
   grid-column: span 1 / span 1;
+}
+.col-span-6{
+  grid-column: span 6 / span 6;
 }
 .mx-auto{
   margin-left: auto;
@@ -1039,6 +1048,9 @@ select{
 }
 .h-full{
   height: 100%;
+}
+.h-\[60vh\]{
+  height: 60vh;
 }
 .max-h-\[40px\]{
   max-height: 40px;
@@ -1153,6 +1165,12 @@ select{
 }
 .gap-y-\[40px\]{
   row-gap: 40px;
+}
+.gap-y-\[0px\]{
+  row-gap: 0px;
+}
+.self-start{
+  align-self: flex-start;
 }
 .self-end{
   align-self: flex-end;
@@ -1693,6 +1711,18 @@ body {
   .lg\:right-0{
     right: 0px;
   }
+  .lg\:bottom-\[0px\]{
+    bottom: 0px;
+  }
+  .lg\:bottom-\[120px\]{
+    bottom: 120px;
+  }
+  .lg\:bottom-\[10px\]{
+    bottom: 10px;
+  }
+  .lg\:bottom-\[140px\]{
+    bottom: 140px;
+  }
   .lg\:order-none{
     order: 0;
   }
@@ -1707,6 +1737,9 @@ body {
   }
   .lg\:col-span-6{
     grid-column: span 6 / span 6;
+  }
+  .lg\:col-span-4{
+    grid-column: span 4 / span 4;
   }
   .lg\:col-start-1{
     grid-column-start: 1;
@@ -1772,5 +1805,14 @@ body {
   }
   .lg\:text-right{
     text-align: right;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:h-\[80vh\]{
+    height: 80vh;
+  }
+  .xl\:h-\[60vh\]{
+    height: 60vh;
   }
 }

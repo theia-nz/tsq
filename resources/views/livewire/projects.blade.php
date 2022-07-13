@@ -23,7 +23,7 @@
     </div>
     @endif
     <div class="relative">
-        <div class="fixed w-full bottom-[40px] lg:bottom-[80px]">
+        <div class="fixed w-full bottom-[40px] lg:bottom-[140px]">
             <div class="container mx-auto px-4">
                 <div class="font-primary font-extralight uppercase text-[36px] text-primary-grey">
                     {{ $repo->title }}
