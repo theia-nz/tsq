@@ -9,6 +9,7 @@ use Livewire\Component;
 class Projects extends Component
 {
     public $repo;
+    public $setting;
     public $service;
 
     public $total;

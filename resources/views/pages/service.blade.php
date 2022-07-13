@@ -3,7 +3,7 @@
 @section('title', $repo->title)
 
 @section('content')
-<livewire:projects :repo="$repo" :serviceSlug="$repo->getSlug()" />
+<livewire:projects :repo="$repo" :setting="$setting" :serviceSlug="$repo->getSlug()" />
 @endsection
 
 @push('scripts')

@@ -6,7 +6,7 @@ use A17\Twill\Models\Behaviors\HasSlug;
 use A17\Twill\Models\Behaviors\HasMedias;
 use A17\Twill\Models\Model;
 
-class PageProject extends Model 
+class PageProject extends Model
 {
     use HasSlug, HasMedias;
 
@@ -14,12 +14,14 @@ class PageProject extends Model
         'published',
         'title',
         'description',
+
+        'header_a'
     ];
-    
+
     public $slugAttributes = [
         'title',
     ];
-    
+
     public $mediasParams = [
         'cover' => [
             'default' => [

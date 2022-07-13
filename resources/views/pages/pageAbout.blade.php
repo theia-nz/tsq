@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container mx-auto px-4">
-	<div class="grid grid-cols-12 gap-y-[40px] lg:gap-y-0 lg:gap-x-[80px] lg:min-h-[80vh]">
+	<div class="grid grid-cols-12 gap-y-[40px] lg:gap-y-0 lg:gap-x-[80px] lg:min-h-[80vh] mb-[30px] lg:mb-0">
 		<div class="col-span-12 lg:col-span-6 flex items-center justify-start">
 			<div>
 				@foreach($repo->sentences as $sentence)

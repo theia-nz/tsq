@@ -92,6 +92,7 @@ class PageController extends Controller
 
         return view('pages.pageProject', [
             'repo' => $repo,
+            'setting' => $this->setting->first(),
         ]);
     }
 
@@ -131,6 +132,7 @@ class PageController extends Controller
 
         return view('pages.service', [
             'repo' => $repo,
+            'setting' => $this->setting->first(),
         ]);
     }
 
