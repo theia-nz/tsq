@@ -17,7 +17,8 @@
 		</div>
 	</div>
 	<div class="absolute z-10 left-0 top-1/2 -translate-y-1/2">
-		<div class="relative flex items-center gap-x-[15px] bg-white bg-opacity-95 py-[15px] px-[15px]">
+		<div
+			class="relative flex items-center gap-x-[15px] bg-white bg-opacity-95 py-[15px] px-[15px] shadow shadow-primary-grey-50">
 			<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
 			@if($prevRepo)
 			<a class="absolute inset-0" href="{{ route('project', $prevRepo->getSlug()) }}"></a>
@@ -28,7 +29,8 @@
 		</div>
 	</div>
 	<div class="absolute z-10 right-0 top-1/2 -translate-y-1/2">
-		<div class="relative flex items-center gap-x-[15px] bg-white bg-opacity-95 py-[15px] px-[15px]">
+		<div
+			class="relative flex items-center gap-x-[15px] bg-white bg-opacity-95 py-[15px] px-[15px] shadow shadow-primary-grey-50">
 			<div class="font-primary font-light uppercase text-[21px] text-primary-grey">
 				{{ $setting->byKey('label_next') }}
 			</div>

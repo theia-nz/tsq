@@ -13,4 +13,8 @@
 'type' => 'textarea'
 ])
 
+@formField('repeater', [
+'type' => 'items',
+])
+
 @stop

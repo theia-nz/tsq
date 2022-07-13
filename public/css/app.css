@@ -1305,32 +1305,8 @@ select{
 .text-\[48px\]{
   font-size: 48px;
 }
-.text-\[3px\]{
-  font-size: 3px;
-}
-.text-\[32px\]{
-  font-size: 32px;
-}
-.text-\[64px\]{
-  font-size: 64px;
-}
-.text-\[6px\]{
-  font-size: 6px;
-}
-.text-\[px\]{
-  font-size: px;
-}
-.text-\[4px\]{
-  font-size: 4px;
-}
-.text-\[40px\]{
-  font-size: 40px;
-}
-.text-\[30px\]{
-  font-size: 30px;
-}
-.text-\[35px\]{
-  font-size: 35px;
+.text-\[29px\]{
+  font-size: 29px;
 }
 .font-bold{
   font-weight: 700;
@@ -1433,6 +1409,34 @@ select{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-primary-grey{
+  --tw-shadow-color: #212429;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-primary-red{
+  --tw-shadow-color: #B1221A;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-primary-red-50{
+  --tw-shadow-color: #FBE5E4;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-red-500{
+  --tw-shadow-color: #ef4444;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-gray-500{
+  --tw-shadow-color: #6b7280;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-primary-grey-500{
+  --tw-shadow-color: #212429;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-primary-grey-50{
+  --tw-shadow-color: #E6E7EB;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 .transition-all{
   transition-property: all;

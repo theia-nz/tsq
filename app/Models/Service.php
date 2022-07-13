@@ -17,6 +17,8 @@ class Service extends Model implements Sortable
         'title',
         'description',
         'position',
+
+        'items',
     ];
 
     public $slugAttributes = [
@@ -80,5 +82,9 @@ class Service extends Model implements Sortable
                 ],
             ],
         ],
+    ];
+
+    protected $casts = [
+        'items' => 'array',
     ];
 }
