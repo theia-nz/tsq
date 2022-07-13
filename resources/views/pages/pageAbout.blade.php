@@ -18,7 +18,7 @@
 				@endforeach
 			</div>
 		</div>
-		<div class="col-span-12 lg:col-span-6">
+		<div class="col-span-12 lg:col-span-6 flex items-start lg:items-center">
 			<img class="object-contain object-center h-full " src="{{ $repo->image('image_a') }}" alt="">
 		</div>
 		<div class="order-first lg:order-none col-span-12 flex items-start lg:items-end justify-between">

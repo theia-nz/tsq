@@ -1988,6 +1988,9 @@ body {
   .lg\:items-end{
     align-items: flex-end;
   }
+  .lg\:items-center{
+    align-items: center;
+  }
   .lg\:justify-start{
     justify-content: flex-start;
   }
