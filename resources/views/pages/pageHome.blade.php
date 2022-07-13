@@ -3,7 +3,7 @@
 @section('title', $repo->title)
 
 @section('content')
-<div class="flex items-center bg-primary-grey cursor-pointer absolute z-50 inset-0"
+<div class="w-screen h-screen flex items-center bg-primary-grey cursor-pointer absolute z-50 inset-0"
 	x-data="{ loadingScreen: @if(config('app.debug')) false @else true @endif }" x-cloak x-show="loadingScreen"
 	x-transition:enter="transition-all" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
 	x-transition:leave="transition-all duration-1000" x-transition:leave-start="opacity-100"
