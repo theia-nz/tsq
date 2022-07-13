@@ -24,10 +24,10 @@ Route::get('/test', function () {
 
 Route::get('/', [PageController::class, 'pageHome'])->name('home');
 Route::get('home', [PageController::class, 'pageHome']);
-Route::get('about', [PageController::class, 'pageAbout']);
-Route::get('services', [PageController::class, 'pageService']);
-Route::get('projects', [PageController::class, 'pageProject']);
-Route::get('contact', [PageController::class, 'pageContact']);
+Route::get('about', [PageController::class, 'pageAbout'])->name('about');
+Route::get('services', [PageController::class, 'pageService'])->name('services');
+Route::get('projects', [PageController::class, 'pageProject'])->name('projects');
+Route::get('contact', [PageController::class, 'pageContact'])->name('contact');
 
 Route::get('services/{service}', [PageController::class, 'service'])->name('service');
 Route::get('projects/{project}', [PageController::class, 'project'])->name('project');

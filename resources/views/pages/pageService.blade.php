@@ -9,7 +9,7 @@
 		@foreach ($repo->getRelated('services')->where('published', 1) as $service)
 		@if($loop->iteration === 4)
 		<div class="col-span-12 lg:col-span-3 flex flex-col items-center lg:items-end justify-end">
-			<div class="font-primary font-light tracking-wider text-[16px] text-primary-grey">
+			<div class="font-primary font-light tracking-wider leading-tight text-right text-[32px] text-primary-grey">
 				{!! nl2br($service->description) !!}
 			</div>
 			<div class="font-primary text-[24px] text-primary-grey mt-[60px]">{{ $service->title }}</div>

@@ -1227,10 +1227,6 @@ select{
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.px-\[30px\]{
-  padding-left: 30px;
-  padding-right: 30px;
-}
 .py-\[15px\]{
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1309,6 +1305,33 @@ select{
 .text-\[48px\]{
   font-size: 48px;
 }
+.text-\[3px\]{
+  font-size: 3px;
+}
+.text-\[32px\]{
+  font-size: 32px;
+}
+.text-\[64px\]{
+  font-size: 64px;
+}
+.text-\[6px\]{
+  font-size: 6px;
+}
+.text-\[px\]{
+  font-size: px;
+}
+.text-\[4px\]{
+  font-size: 4px;
+}
+.text-\[40px\]{
+  font-size: 40px;
+}
+.text-\[30px\]{
+  font-size: 30px;
+}
+.text-\[35px\]{
+  font-size: 35px;
+}
 .font-bold{
   font-weight: 700;
 }
@@ -1329,6 +1352,9 @@ select{
 }
 .leading-7{
   line-height: 1.75rem;
+}
+.leading-tight{
+  line-height: 1.25;
 }
 .tracking-wider{
   letter-spacing: 0.05em;

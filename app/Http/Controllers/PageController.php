@@ -123,7 +123,7 @@ class PageController extends Controller
         })->where('published', 1)->get();
 
         if (!$projects->count()) {
-            return redirect()->route('home');
+            return redirect()->route('projects');
         }
 
         return view('pages.service', [
