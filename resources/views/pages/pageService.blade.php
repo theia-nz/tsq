@@ -5,14 +5,14 @@
 @section('content')
 @if($repo->getRelated('services')->count())
 <div class="container mx-auto px-4">
-	<div class="grid grid-cols-12 gap-y-[20px] lg:gap-y-[40px] lg:gap-x-[40px] lg:min-h-[80vh]">
+	<div class="grid grid-cols-12 gap-y-[20px] lg:gap-y-[40px] lg:gap-x-[40px] lg:min-h-[80vh] mb-[30px] lg:mb-0">
 		@foreach ($repo->getRelated('services')->where('published', 1) as $service)
 		@if($loop->iteration === 4)
 		<div class="col-span-12 lg:col-span-3 flex flex-col items-center lg:items-end justify-end">
 			<div class="flex flex-col items-end justify-between h-[50vh]">
 				@foreach($service->items as $item)
 				<div
-					class="font-primary font-light tracking-wider leading-tight text-right text-[29px] text-primary-grey">
+					class="font-primary font-normal tracking-wider leading-tight text-right text-[29px] text-primary-grey">
 					{!! nl2br($item['name']) !!}
 				</div>
 				@endforeach

@@ -12,6 +12,10 @@
 'type' => 'text',
 ])
 
+@formField('repeater', [
+'type' => 'sentences',
+])
+
 @formField('wysiwyg', [
 'name' => 'paragraph_a',
 'label' => 'Paragraph A',

@@ -14,6 +14,7 @@ use App\Repositories\PageContactRepository;
 use App\Repositories\PageProjectRepository;
 use App\Repositories\PageServiceRepository;
 use A17\Twill\Repositories\SettingRepository;
+use App\Repositories\FormContactRepository;
 
 class PageController extends Controller
 {
@@ -94,11 +95,13 @@ class PageController extends Controller
         ]);
     }
 
-    public function pageContact(PageContactRepository $pageContact)
+    public function pageContact(PageContactRepository $pageContact, FormContactRepository $formContact)
     {
         $repo = $pageContact->where('published', 1)->first();
 
-        if (!$repo) {
+        $repoTwo = $formContact->where('published', 1)->first();
+
+        if (!$repo || !$repoTwo) {
             abort(404);
         }
 

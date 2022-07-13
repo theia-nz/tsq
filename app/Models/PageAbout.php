@@ -18,7 +18,8 @@ class PageAbout extends Model
         'header_a',
         'paragraph_a',
         'link_label_a',
-        'link_a'
+        'link_a',
+        'sentences',
     ];
 
     public $slugAttributes = [
@@ -82,5 +83,9 @@ class PageAbout extends Model
                 ],
             ],
         ],
+    ];
+
+    protected $casts = [
+        'sentences' => 'array',
     ];
 }
