@@ -932,10 +932,6 @@ select{
   margin-left: auto;
   margin-right: auto;
 }
-.my-\[15px\]{
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 .ml-1{
   margin-left: 0.25rem;
 }
@@ -1035,9 +1031,6 @@ select{
 .h-\[50vh\]{
   height: 50vh;
 }
-.max-h-\[30vh\]{
-  max-height: 30vh;
-}
 .max-h-\[40px\]{
   max-height: 40px;
 }
@@ -1119,9 +1112,6 @@ select{
 .justify-between{
   justify-content: space-between;
 }
-.gap-\[30px\]{
-  gap: 30px;
-}
 .gap-y-\[5px\]{
   row-gap: 5px;
 }
@@ -1192,18 +1182,6 @@ select{
   --tw-bg-opacity: 1;
   background-color: rgb(33 36 41 / var(--tw-bg-opacity));
 }
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-.bg-red-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-.bg-tertiary-grey{
-  --tw-bg-opacity: 1;
-  background-color: rgb(128 128 128 / var(--tw-bg-opacity));
-}
 .bg-opacity-0{
   --tw-bg-opacity: 0;
 }
@@ -1212,12 +1190,6 @@ select{
 }
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
-}
-.bg-opacity-5{
-  --tw-bg-opacity: 0.05;
-}
-.bg-opacity-75{
-  --tw-bg-opacity: 0.75;
 }
 .bg-cover{
   background-size: cover;
@@ -1259,6 +1231,14 @@ select{
   padding-left: 30px;
   padding-right: 30px;
 }
+.py-\[15px\]{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .py-\[5px\]{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1266,34 +1246,6 @@ select{
 .px-\[45px\]{
   padding-left: 45px;
   padding-right: 45px;
-}
-.py-\[15px\]{
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.py-\[\]{
-  padding-top: ;
-  padding-bottom: ;
-}
-.px-\[\]{
-  padding-left: ;
-  padding-right: ;
-}
-.px-\[5p\]{
-  padding-left: 5p;
-  padding-right: 5p;
-}
-.px-\[5px\]{
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.py-\[5\]{
-  padding-top: 5;
-  padding-bottom: 5;
-}
-.px-\[15px\]{
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .pt-8{
   padding-top: 2rem;
@@ -1315,15 +1267,6 @@ select{
 }
 .pl-\[20px\]{
   padding-left: 20px;
-}
-.pb-\[\]{
-  padding-bottom: ;
-}
-.pb-\[3\]{
-  padding-bottom: 3;
-}
-.pb-\[30px\]{
-  padding-bottom: 30px;
 }
 .text-left{
   text-align: left;
@@ -1710,9 +1653,6 @@ body {
   .lg\:mt-\[60px\]{
     margin-top: 60px;
   }
-  .lg\:max-h-\[60vh\]{
-    max-height: 60vh;
-  }
   .lg\:min-h-\[80vh\]{
     min-height: 80vh;
   }
@@ -1737,10 +1677,6 @@ body {
   .lg\:gap-x-\[40px\]{
     -moz-column-gap: 40px;
          column-gap: 40px;
-  }
-  .lg\:gap-x-\[60px\]{
-    -moz-column-gap: 60px;
-         column-gap: 60px;
   }
   .lg\:bg-transparent{
     background-color: transparent;

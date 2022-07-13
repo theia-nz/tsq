@@ -38,14 +38,8 @@
 			@endif
 		</div>
 	</div>
-	<div class="absolute z-10 bottom-0 w-full bg-white bg-opacity-95">
-		<div class="container mx-auto px-4 py-[15px] flex items-center justify-between">
-			<div>
-				<div class="font-primary font-medium uppercase text-[36px] text-primary-grey">{{ $repo->title }}
-				</div>
-				<div class="font-primary font-medium text-[20px] text-secondary-grey">{!! nl2br($repo->description) !!}
-				</div>
-			</div>
+	<div class="absolute z-10 bottom-0 w-full">
+		<div class="container mx-auto px-4 flex items-center justify-end">
 			<div class="inline-flex items-center gap-x-[15px]">
 				<div class="swiper-pagination swiper-pagination-singleproject"></div>
 				<div id="swiper-index-singleproject" class="font-primary font-medium text-[48px] text-primary-grey">
