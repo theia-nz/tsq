@@ -21,7 +21,7 @@
 			<img src="{{ $setting->where('key', 'icon_angle_left')->first()->image('icon_angle_left') }}" alt="">
 			@if($prevRepo)
 			<a class="font-primary font-light uppercase text-[21px] text-primary-grey bg-white bg-opacity-95 h-full px-[15px] flex items-center absolute right-0 -translate-x-full transition-all group-hover:translate-x-full"
-				href="{{ route('project', $nextRepo->getSlug()) }}">
+				href="{{ route('project', $prevRepo->getSlug()) }}">
 				{{ $setting->byKey('label_previous') }}
 			</a>
 			<a class="absolute inset-0" href="{{ route('project', $prevRepo->getSlug()) }}"></a>
