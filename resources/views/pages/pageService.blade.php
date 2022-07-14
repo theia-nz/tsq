@@ -12,7 +12,7 @@
 			<div class="flex flex-col items-end justify-between h-[50vh]">
 				@foreach($service->items as $item)
 				<div
-					class="font-primary font-normal tracking-wider leading-tight text-right text-[29px] text-primary-grey">
+					class="font-primary font-normal tracking-wider leading-tight text-right text-[27px] text-primary-grey">
 					{!! nl2br($item['name']) !!}
 				</div>
 				@endforeach
@@ -23,11 +23,12 @@
 		<div class="col-span-12 lg:col-span-3 flex flex-col items-center lg:items-end justify-end">
 			<div class="relative group">
 				<div class="absolute inset-0 bg-white bg-opacity-0 transition-all group-hover:bg-opacity-50"></div>
-				<img class="object-cover object-center h-[50vh]" src="{{ $service->image('featured_image') }}" alt="">
+				<img class="object-cover object-center h-[60vh]" src="{{ $service->image('featured_image') }}" alt="">
 				<a class="absolute inset-0" href="{{ route('service', $service->getSlug()) }}"></a>
 			</div>
-			<div class="font-primary text-[24px] text-primary-grey mt-[20px] lg:mt-[60px] mb-[20px] lg:mb-0">{{
-				$service->title }}</div>
+			<div class="font-primary text-[24px] text-primary-grey mt-[20px] lg:mt-[60px] mb-[20px] lg:mb-0">
+				{{ $service->title }}
+			</div>
 		</div>
 		@endif
 		@endforeach

@@ -60,12 +60,12 @@ class ServicesTableSeeder extends Seeder
                 'id' => 4,
                 'deleted_at' => NULL,
                 'created_at' => '2022-07-05 00:47:13',
-                'updated_at' => '2022-07-13 07:31:53',
+                'updated_at' => '2022-07-14 01:34:31',
                 'published' => 1,
                 'title' => 'Project Management',
                 'description' => NULL,
                 'position' => 4,
-                'items' => '[{"id": 1657697486850, "name": "Concept Design", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697487490, "name": "Resource Consent Prepare and Application", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697487897, "name": "Building Consent Prepare and Application", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697488291, "name": "Cooperation with Consultants", "blocks": [], "medias": [], "browsers": []}, {"id": 1657697488705, "name": "Cooperation with Construction Works", "blocks": [], "medias": [], "browsers": []}]',
+                'items' => '[{"id": 1657762405575, "name": "Concept Design", "blocks": [], "medias": [], "browsers": []}, {"id": 1657762417392, "name": "Resource Consent\\nPrepare and Application", "blocks": [], "medias": [], "browsers": []}, {"id": 1657762419688, "name": "Building Consent\\nPrepare and Application", "blocks": [], "medias": [], "browsers": []}, {"id": 1657762421359, "name": "Cooperation with\\nConsultants", "blocks": [], "medias": [], "browsers": []}, {"id": 1657762456705, "name": "Cooperation with\\nConstruction Works", "blocks": [], "medias": [], "browsers": []}]',
             ),
             4 => 
             array (

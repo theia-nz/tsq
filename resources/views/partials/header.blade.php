@@ -5,11 +5,18 @@
 		class="container mx-auto px-4 @if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home') py-[5px] @else pt-[15px] pb-[15px] lg:pb-[30px] @endif flex items-center justify-between">
 		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
-			<img class="@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home') max-h-[40px] @else max-h-[80px] @endif"
-				src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}" alt="">
+			@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home')
+			<img class="max-h-[30px]"
+				src="{{ $setting->where('key', 'company_favicon')->first()->image('company_favicon') }}" alt="">
+			@else
+			<img class="max-h-[80px]" src="{{ $setting->where('key', 'company_logo')->first()->image('company_logo') }}"
+				alt="">
+			@endif
 		</div>
-		<img class="cursor-pointer" src="{{ $setting->where('key', 'icon_bars')->first()->image('icon_bars') }}" alt=""
-			x-on:click.stop="sideMenu = true">
+		<svg class="cursor-pointer w-[30px] h-[30px]" x-on:click.stop="sideMenu = true"
+			xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+		</svg>
 	</div>
 	<div class="flex flex-row-reverse fixed inset-0" x-cloak x-show="sideMenu">
 		<div class="cursor-pointer absolute inset-0" x-show="sideMenu" x-on:click="sideMenu = false"

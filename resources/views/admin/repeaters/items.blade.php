@@ -5,5 +5,5 @@
 @formField('input', [
 'name' => 'name',
 'label' => 'Name',
-'type' => 'text',
+'type' => 'textarea',
 ])

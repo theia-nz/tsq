@@ -36,9 +36,9 @@
 	</div>
 	<div class="absolute z-10 bottom-0 w-full">
 		<div class="container mx-auto px-4 flex items-center justify-end">
-			<div class="inline-flex items-center gap-x-[15px]">
+			<div class="inline-flex items-center gap-x-[15px] my-[30px]">
 				<div class="swiper-pagination swiper-pagination-pagehome"></div>
-				<div id="swiper-index-pagehome" class="font-primary font-medium text-[48px] text-white"></div>
+				{{-- <div id="swiper-index-pagehome" class="font-primary font-medium text-[48px] text-white"></div> --}}
 			</div>
 		</div>
 	</div>

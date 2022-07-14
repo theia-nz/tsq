@@ -30,11 +30,6 @@
         <div class="fixed w-full bottom-[30px]">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-12">
-                    <div class="col-span-4 flex items-end">
-                        <div class="font-primary font-extralight uppercase text-[36px] text-primary-grey">
-                            {{ $repo->title }}
-                        </div>
-                    </div>
                     <div class="col-start-9 lg:col-start-5 col-span-4 flex items-end justify-end lg:justify-center">
                         @if($can_load_more)
                         <div

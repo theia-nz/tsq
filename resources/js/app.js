@@ -38,23 +38,23 @@ const pageHome = new Swiper(".swiper-pagehome", {
     },
 });
 
-pageHome.on("init", () => {
-    document.getElementById("swiper-index-pagehome").innerHTML = (
-        pageHome.realIndex + 1
-    )
-        .toString()
-        .padStart(2, "0");
-});
+// pageHome.on("init", () => {
+//     document.getElementById("swiper-index-pagehome").innerHTML = (
+//         pageHome.realIndex + 1
+//     )
+//         .toString()
+//         .padStart(2, "0");
+// });
 
 pageHome.init();
 
-pageHome.on("slideChange", () => {
-    document.getElementById("swiper-index-pagehome").innerHTML = (
-        pageHome.realIndex + 1
-    )
-        .toString()
-        .padStart(2, "0");
-});
+// pageHome.on("slideChange", () => {
+//     document.getElementById("swiper-index-pagehome").innerHTML = (
+//         pageHome.realIndex + 1
+//     )
+//         .toString()
+//         .padStart(2, "0");
+// });
 
 // singleProject
 
@@ -81,20 +81,20 @@ const singleProject = new Swiper(".swiper-singleproject", {
     },
 });
 
-singleProject.on("init", () => {
-    document.getElementById("swiper-index-singleproject").innerHTML = (
-        singleProject.realIndex + 1
-    )
-        .toString()
-        .padStart(2, "0");
-});
+// singleProject.on("init", () => {
+//     document.getElementById("swiper-index-singleproject").innerHTML = (
+//         singleProject.realIndex + 1
+//     )
+//         .toString()
+//         .padStart(2, "0");
+// });
 
 singleProject.init();
 
-singleProject.on("slideChange", () => {
-    document.getElementById("swiper-index-singleproject").innerHTML = (
-        singleProject.realIndex + 1
-    )
-        .toString()
-        .padStart(2, "0");
-});
+// singleProject.on("slideChange", () => {
+//     document.getElementById("swiper-index-singleproject").innerHTML = (
+//         singleProject.realIndex + 1
+//     )
+//         .toString()
+//         .padStart(2, "0");
+// });

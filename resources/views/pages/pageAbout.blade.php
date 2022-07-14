@@ -5,11 +5,11 @@
 @section('content')
 <div class="container mx-auto px-4">
 	<div class="grid grid-cols-12 gap-y-[40px] lg:gap-y-0 lg:gap-x-[80px] lg:min-h-[80vh] mb-[30px] lg:mb-0">
-		<div class="col-span-12 lg:col-span-6 flex items-center justify-start">
+		<div class="col-span-12 lg:col-span-6 flex items-center lg:items-end justify-start">
 			<div>
 				@foreach($repo->sentences as $sentence)
-				<div class="font-primary font-normal tracking-wider text-[29px] text-primary-grey">
-					@isset($sentence['capital']) <span class="font-bold text-[60px] text-tertiary-grey">{{
+				<div class="font-primary font-normal tracking-wider text-[27px] text-primary-grey">
+					@isset($sentence['capital']) <span class="font-bold text-[40px] text-black">{{
 						$sentence['capital']
 						}}</span>
 					@endisset
@@ -18,8 +18,8 @@
 				@endforeach
 			</div>
 		</div>
-		<div class="col-span-12 lg:col-span-6 flex items-start lg:items-center">
-			<img class="object-contain object-center h-full " src="{{ $repo->image('image_a') }}" alt="">
+		<div class="col-span-12 lg:col-span-6 flex items-start lg:items-end">
+			<img class="object-contain object-bottom h-full " src="{{ $repo->image('image_a') }}" alt="">
 		</div>
 		<div class="order-first lg:order-none col-span-12 flex items-start lg:items-end justify-between">
 			<div class="font-primary font-extralight uppercase text-[36px] text-primary-grey">
