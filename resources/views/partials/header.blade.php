@@ -2,10 +2,11 @@
 	class="@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home' || \Illuminate\Support\Facades\Route::currentRouteName() === 'project') bg-white bg-opacity-95 w-full fixed top-0 @else relative @endif z-40"
 	x-data="{ sideMenu: false }">
 	<div
-		class="container mx-auto px-4 @if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home') py-[5px] @else pt-[15px] pb-[15px] lg:pb-[30px] @endif flex items-center justify-between">
+		class="container mx-auto px-4 @if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home' || \Illuminate\Support\Facades\Route::currentRouteName() === 'project') py-[5px] @else pt-[15px] pb-[15px] lg:pb-[30px] @endif flex items-center justify-between">
 		<div class="relative mr-[15px]">
 			<a class="absolute inset-0" href="{{ config('app.url') }}"></a>
-			@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home')
+			@if(\Illuminate\Support\Facades\Route::currentRouteName() === 'home' ||
+			\Illuminate\Support\Facades\Route::currentRouteName() === 'project')
 			<img class="max-h-[30px]"
 				src="{{ $setting->where('key', 'company_favicon')->first()->image('company_favicon') }}" alt="">
 			@else
