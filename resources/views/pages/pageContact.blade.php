@@ -79,7 +79,7 @@
 			</div>
 		</div>
 		<div class="col-span-12 lg:col-span-6 flex items-end justify-end">
-			<div class="font-primary font-light tracking-wider text-right text-[16px] text-tertiary-grey">
+			<div class="hidden font-primary font-light tracking-wider text-right text-[16px] text-tertiary-grey">
 				{!! $setting->byKey('company_copyright') !!}
 			</div>
 		</div>
